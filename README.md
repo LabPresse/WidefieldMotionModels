@@ -47,7 +47,7 @@ The software presented here accompanies our scientific article [How Easy Is It t
         Second, modify "classification_net_testing.py" as follows:
           Uncomment-out line [43] and comment out the line below [44] to use the pre-trained network.
           Insert the line "!pip install mat73;    import mat73" above line [40], which reads "def classification_on_file(file):".
-          Modify the line [##] FROM "f = scipy.io.loadmat(file)" TO 
+          Modify the line [47] FROM "f = scipy.io.loadmat(file)" TO "f = mat73.loadmat(file)".
           At the bottom of the script, add the following lines to correct the outdated Keras syntax.
             "import h5py, json, numpy as np"
             "from pathlib import Path"
@@ -82,6 +82,3 @@ The software presented here accompanies our scientific article [How Easy Is It t
           Respond "n" to the prompt, "Would you like to train CONDOR networks for classification (y/n)?"
           Respond "n" to the prompt, "Would you like to train CONDOR networks for inference (y/n)?"
           Respond "y" to the prompt, "Would you like to predict the anomalous diffusion coefficient with CONDOR (y/n)?"
-
-
-
