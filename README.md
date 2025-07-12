@@ -1,9 +1,11 @@
 **WideFieldMotionModels**
 
-The software presented here accompanies our scientific article [How Easy Is It to Learn Motion Models in Widefield Fluorescence Microscopy](https://arxiv.org/abs/2507.05599). The data used in our [article](https://arxiv.org/abs/2507.05599), is available for download at [Zenodo](https://zenodo.org/records/15845741).
+The software presented here accompanies our scientific article [How Easy Is It to Learn Motion Models in Widefield Fluorescence Microscopy](https://arxiv.org/abs/2507.05599). The data used in our article, is available for download at [Zenodo](https://zenodo.org/records/15845741).
 
 **I: Data Generation**
-  *a: Trajectories*
+
+*a: Trajectories*
+
     New trajectories of both anomalous and normal diffusion can be simulated using our codes in the directory "WidefieldMotionModels/Simulation/":
         "simulateATTM.m" (Anomalous Diffusion)
         "simulateCTRW.m" (Anomalous Diffusion)
@@ -16,20 +18,24 @@ The software presented here accompanies our scientific article [How Easy Is It t
     For reproduction of the data in our article, trajectories of anomalous diffusion can be re-simulated from our code "AnDi.py" that calls upon the [AnDi Challenge repository](https://github.com/AnDiChallenge/andi_datasets). This code has a fixed pseudorandom number generator to produce the same trajectories featured in our [article](https://arxiv.org/abs/2507.05599). Pre-prepared files include: {"BM.m","DBM", "ATTM(0.5)","ATTM(1)", "CTRW(0.5)","CTRW(1)", "FBM(0.5)","FBM(1)","FBM(1.5)", "LW(1.5),LW(2)", "SBM(0.5)","SBM(1)","SBM(1.5)","SBM(2)"}.
 
   *b: Photoelectron Loads and EMCCD Measurements*
+  
         "simulateEmission.m"
           Takes as input either 
             (i) the output of "simulate{⋅}", where {⋅} denotes one of the motion models featured in our article (i.e., BM, DBM, ATTM, CTRW, FBM, LW, SBM), or
             (ii) one of the pre-prepared files.
 
   *c: Data Preparation:*
+  
         "Prepare.m" takes the output of simulate{⋅} or the data loaded from one of the pre-prepared files; this function saves its output as "Prepared{⋅}.m".
 
 **II: Track Diffusing Particles**
-  To perform Bayesian inference of SPT data, run the function below as Infer{"⋅"}, where ⋅ denotes one of the motion models featured in our [article](https://arxiv.org/abs/2507.05599).
+
+    To perform Bayesian inference of SPT data, run the function below as Infer{"⋅"}, where ⋅ denotes one of the motion models featured in our [article](https://arxiv.org/abs/2507.05599).
     "Infer.m"
       Takes as primary input the name of a motion model "{⋅}" saved as "Data/Prepared{⋅}.m".
 
 **III: Learn Motion Models**
+
     Until we obtain permission to upload working versions of the motion model classifiers [CONDOR](https://github.com/sam-labUCL/CONDOR/tree/main) and [AnomDiffDB](https://github.com/AnomDiffDB/DB), we provide details on how to operate them.
 
     (1) First, use "generateInput.m" to produce the desired data files in their appropriate directories.
