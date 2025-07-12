@@ -4,7 +4,7 @@ function varargout = simulateExpectation(In)
       In.S = simulatePhotostates(In);
     %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
     %    Neglect  Photobleaching    !
-      In.S(1 : end, 1 : end) = 2    ; % <--- TURN BACK OFF!
+      In.S(1 : end, 1 : end) = 2    ;
     %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
   end
 %--------------------------------------------------|
@@ -38,11 +38,12 @@ function varargout = simulateExpectation(In)
        end
      end
    end
+ % Calculate photoelectron load:
    u = F*dA*tE + h*u*Dt;
- %R  = [X  ;  Y  ;  Z] ;
+     % bsxfun(@plus, F*tE*dA, h*u*Dt);
+%% Store in-frame positions:
   R.X = X;    R.Y = Y;    R.Z = Z;
- % u = bsxfun(@plus, F*tE*dA, h*u*Dt);
-
+%% Assign Output:
   if     nargout == 1;  varargout{1} = u;
   elseif nargout == 2;  varargout{1} = u;    varargout{2} = R;
   end

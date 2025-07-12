@@ -1,9 +1,3 @@
-function                                               ...
-logL = logLikelihoodGaussian(measurements,mean,standardDeviation)
-logL = sum(logpdfGaussian(measurements,mean,standardDeviation),"All");
+function logL = logLikelihoodGaussian(measurements,mean,standardDeviation)
+         logL = sum(   logpdfGaussian(measurements,mean,standardDeviation),"All");
 end
-%{
-logL = - sum(variable - mean) .^2                     ...
-     / (2 * standardDeviation ^2)                           ...
-     - 1/2 * ( log(2) + log(pi) + log(standardDeviation^2) ) ; 
-%}

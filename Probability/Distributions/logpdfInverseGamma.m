@@ -1,5 +1,4 @@
-function                                                                       ...
-logPDF = logpdfInverseGamma(variable,shape,scale)
+function logPDF = logpdfInverseGamma(variable,shape,scale)
          if isnumeric(variable) & isnumeric(shape) & isnumeric(scale)
             if ~isreal(variable)      | ~isreal(shape)     | ~isreal(scale)    ...
              |  isNegative(variable)  | isNegative(shape)  | isNegative(scale)    %#ok<*OR2>

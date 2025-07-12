@@ -1,5 +1,4 @@
-function                                                                      ...
-  sample = sampleGamma(shape,scale)
+function sample = sampleGamma(shape,scale)
            if isnumeric(shape) & isnumeric(scale)
              if ~isreal(shape)      | ~isreal(scale)                          ...
               |  isNegative(shape)  | isNegative(scale)                          %#ok<*OR2>

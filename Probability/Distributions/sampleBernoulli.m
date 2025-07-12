@@ -1,5 +1,4 @@
-function                                          ...
-outcome = sampleBernoulli(successProbability)
+function outcome = sampleBernoulli(successProbability)
           % drawn from fundamental theorem of simulation.
           if isnumeric(successProbability)
              if      successProbability<0         ...

@@ -1,5 +1,4 @@
-function                                                 ...
-logPDF = logpdfUniform(varargin)
+function logPDF = logpdfUniform(varargin)
          args = varargin;
          if nargin == 3
             variable = args{1}; 

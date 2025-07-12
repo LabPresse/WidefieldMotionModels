@@ -7,14 +7,6 @@ function logPrior = logPriorF(F,Prior)
  % logPrior = (shape - 1) * log(variable)          ...
  %          - variable/scale                       ...
  %          - ( shape * log(scale) + gammaln(shape) );
-% Simplism: 
- % logPrior = (shape - 1) * log(variable) - shape * variable / shapedScale;
-
-
-% INVERSE GAMMA:
-%logPDF = shape * log(scale)                 ...
-%       - gammaln(shape) - scale ./ variable ...
-%       - log(variable) * (shape + 1)          ;   % (.,scale = shape*chi) for ~{D,G}
 
 end
 

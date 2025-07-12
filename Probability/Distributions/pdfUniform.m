@@ -1,5 +1,4 @@
-function                                                 ...
-PDF = pdfUniform(varargin)
+function PDF = pdfUniform(varargin)
       args = varargin;
       if nargin == 3
          variable = args{1}; 

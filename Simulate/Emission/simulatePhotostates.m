@@ -1,8 +1,6 @@
 function State = simulatePhotostates(In)
   K = In.K;    M = In.M;    dt = In.Time.Increment;    t = In.Time.Levels;
 if ~isfield(In,"p2");    In.p2 = 1  ;    end;         p2 = In.p2    ;
-                 % ^^ <---- IS THIS Photostate(2) ???
-                    % the probability of emitters being in State 2 ???
 if ~isfield(In.Time,"tStart");    In.tStart = inf;    end;    tStart = In.tStart;
 if ~isfield(In.Time,"tEnd"  );    In.tEnd   = inf;    end;    tEnd   = In.tEnd  ;
 
@@ -44,10 +42,8 @@ end
 
 
 function j = sample(p)
-
     % P = cumsum(p);
     % j = find( P(end)*rand(1) <= P, 1 );
-
     [p, ind] = sort(p, 'descend');
     P = cumsum(p);
     j = ind(find(P(end) * rand(1) <= P, 1));

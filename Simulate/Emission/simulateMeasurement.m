@@ -1,5 +1,10 @@
-function w = simulateMeasurement(sIn)
-         u = sIn.u;    f = sIn.f;    G = sIn.G;
-%% Simulate Gamma-distributed photon shot noise:
-   w = f * G * randg(u / f);
+function w = simulateMeasurement(In)
+% Define shorthand variables:
+         u = In.u    ;    G  = In.G    ;
+if   isfield(In,"QE");    QE = In.QE   ; % Quantum Efficiency.
+else                 ;    QE = 1       ;
+                             % 95 / 100; % Typical of EMCCDs.
+end
+%% Simulate Gamma-distributed detector noise:
+   w = 2*G * randg(QE*u / 2);
 end

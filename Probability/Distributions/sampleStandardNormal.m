@@ -1,4 +1,4 @@
-function   sample  = sampleStandardNormal(varargin)
+function sample  = sampleStandardNormal(varargin)
                    % "Standard" ⟹ (μ=0, σ=1)
     if     nargin == 0;           Size    = 1          ;
     elseif nargin == 1;           Size    = varargin{1};

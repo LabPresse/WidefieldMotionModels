@@ -1,12 +1,4 @@
 function Out   = simulateEmission(In,varargin)
-%{
-  if~nargin
-     In = simulateBm...
-    else
-      for any = 1 : nargin - 1
-      end
-    end
-%}
         Out        = In                      ;
         Out.S      = simulatePhotostates(In) ;
     %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|

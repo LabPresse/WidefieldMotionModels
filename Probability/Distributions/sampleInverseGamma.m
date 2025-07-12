@@ -1,5 +1,4 @@
-function                                              ...
-  instantiation = sampleInverseGamma(shape,scale)    
+function instantiation = sampleInverseGamma(shape,scale)    
            if isnumeric(shape,scale)
              if ~isreal(shape)     | ~isreal(scale)   ...
               | isNegative(shape)  | isNegative(scale)   %#ok<*OR2>

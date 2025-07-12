@@ -1,5 +1,4 @@
-function                                                 ...
-sample = sampleNormal(mean,variance)
+function sample = sampleNormal(mean,variance)
          % drawn from fundamental theorem of simulation.
          if isnumeric(mean) & isnumeric(variance)
             if ~isreal(mean)                             ...
