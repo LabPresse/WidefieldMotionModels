@@ -1,0 +1,16 @@
+function                                       ...
+  PDF = pdfBernoulli(successProbability,outcome)
+        if isnumeric(successProbability)
+           if      successProbability<0        ...
+            |      successProbability>1        ...
+            | imag(successProbability)>0          %#ok<*OR2>
+              disp("<Bernoulli>InvalidDomain:" ...
+                   + " ∃ ℙ(p) ∀ p∈ℝ[0,1].")     ;
+              PDF = NaN;    
+           else; binopdf(successProbability,outcome); 
+           end
+              return
+        end
+  PDF = successProbability .^ outcome                  ...
+     .* (1 - successProbability) .^ (1 - outcome)        ;   
+end

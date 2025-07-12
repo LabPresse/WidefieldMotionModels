@@ -1,0 +1,13 @@
+function                                                  ...
+  sample = sampleUniform(Minimum,Maximum)
+           if isnumeric(Minimum) & isnumeric(Maximum)
+             if Minimum  > Maximum                        ...
+             || Minimum == -inf                           ...
+             || Maximum == +inf
+                disp("<sampleUniform>InvalidInputDomain:" ...
+                     +"∃ 𝕌[rₘᵢₙ,rₘₐₓ] ∀ ℝ(-∞<rₘᵢₙ<rₘₐₓ<+∞).");
+               sample = NaN;                           return
+             end
+           end
+  sample = Minimum + (Maximum - Minimum) * unifrnd(0,1)     ;
+end
