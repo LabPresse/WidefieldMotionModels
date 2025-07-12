@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrackMate version="7.14.0">
+  <Log>TrackMate v7.14.0 started on:&#xD;
+Tue, 4 Mar 2025 09:31:27&#xD;
+Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite our work:&#xD;
+Ershov, D., Phan, MS., Pylvänäinen, J.W., Rigaud S.U., et al. TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nat Methods (2022). https://doi.org/10.1038/s41592-022-01507-1&#xD;
+https://doi.org/10.1038/s41592-022-01507-1&#xD;
+and / or:&#xD;
+Tinevez, JY.; Perry, N. &amp; Schindelin, J. et al. (2017), 'TrackMate: An open and extensible platform for single-particle tracking.', Methods 115: 80-90, PMID 27713081.&#xD;
+https://www.sciencedirect.com/science/article/pii/S1046202316303346&#xD;
+&#xD;
+Numerical feature analyzers:&#xD;
+Spot feature analyzers:&#xD;
+ - Manual spot color provides: Spot color; is manual.&#xD;
+ - Spot intensity provides: Mean ch1, Median ch1, Min ch1, Max ch1, Sum ch1, Std ch1.&#xD;
+ - Spot contrast and SNR provides: Ctrst ch1, SNR ch1.&#xD;
+Edge feature analyzers:&#xD;
+ - Directional change provides: γ rate.&#xD;
+ - Edge speed provides: Speed, Disp.&#xD;
+ - Edge target provides: Source ID, Target ID, Cost.&#xD;
+ - Edge location provides: Edge T, Edge X, Edge Y, Edge Z.&#xD;
+ - Manual edge color provides: Edge color; is manual.&#xD;
+Track feature analyzers:&#xD;
+ - Branching analyzer provides: N spots, N gaps, N splits, N merges, N complex, Lgst gap.&#xD;
+ - Track duration provides: Duration, Track start, Track stop, Track disp.&#xD;
+ - Track index provides: Index, ID.&#xD;
+ - Track location provides: Track X, Track Y, Track Z.&#xD;
+ - Track speed provides: Mean sp., Max speed, Min speed, Med. speed, Std speed.&#xD;
+ - Track quality provides: Mean Q.&#xD;
+ - Track motility analysis provides: Total dist., Max dist., Cfn. ratio, Mn. v. line, Fwd. progr., Mn. γ rate.&#xD;
+&#xD;
+Image region of interest:&#xD;
+Image data:&#xD;
+For the image named: Free(D=1,N=150)2D.tif.&#xD;
+Matching file Free(D=1,N=150)2D.tif in folder: C:\Users\ZachyHeath\ASU Dropbox\Zachary Hendrix\Diffusion\BayesDiffusion\&#xD;
+Geometry:&#xD;
+  X =    0 -  127, dx = 1.00000&#xD;
+  Y =    0 -  127, dy = 1.00000&#xD;
+  Z =    0 -    0, dz = 1.00000&#xD;
+  T =    0 -  149, dt = 1.00000&#xD;
+&#xD;
+Configured detector LoG detector with settings:&#xD;
+  - target channel: 1&#xD;
+  - threshold: 0.8801046735921724&#xD;
+  - do median filtering: false&#xD;
+  - radius: 5.0&#xD;
+  - do subpixel localization: true&#xD;
+&#xD;
+Starting detection process using 20 threads.&#xD;
+Detection processes 20 frames simultaneously and allocates 1 thread per frame.&#xD;
+Found 112 spots.&#xD;
+Detection done in 0.3 s.&#xD;
+&#xD;
+Computing spot quality histogram...&#xD;
+Initial thresholding with a quality threshold above 0.4 ...&#xD;
+Starting initial filtering process.&#xD;
+Retained 112 spots out of 112.&#xD;
+&#xD;
+Calculating spot features...&#xD;
+Calculating features done in 0.1 s.&#xD;
+&#xD;
+Performing spot filtering on the following features:&#xD;
+No feature threshold set, kept the 112 spots.&#xD;
+&#xD;
+Configured tracker Simple LAP tracker with settings:&#xD;
+  - max frame gap: 2&#xD;
+  - alternative linking cost factor: 1.05&#xD;
+  - linking feature penalties: &#xD;
+  - linking max distance: 15.0&#xD;
+  - gap closing max distance: 15.0&#xD;
+  - merging feature penalties: &#xD;
+  - splitting max distance: 15.0&#xD;
+  - blocking value: Infinity&#xD;
+  - allow gap closing: true&#xD;
+  - allow track splitting: false&#xD;
+  - allow track merging: false&#xD;
+  - merging max distance: 15.0&#xD;
+  - splitting feature penalties: &#xD;
+  - cutoff percentile: 0.9&#xD;
+  - gap closing feature penalties: &#xD;
+&#xD;
+Starting tracking process.&#xD;
+Tracking done in 0.0 s.&#xD;
+Found 13 tracks.&#xD;
+  - avg size: 7.8 spots.&#xD;
+  - min size: 2 spots.&#xD;
+  - max size: 20 spots.&#xD;
+&#xD;
+Calculating features done in 0.0 s.&#xD;
+&#xD;
+Performing track filtering on the following features:&#xD;
+No feature threshold set, kept the 13 tracks.&#xD;
+&#xD;
+Performing track filtering on the following features:&#xD;
+No feature threshold set, kept the 13 tracks.&#xD;
+&#xD;
+Configured tracker Simple LAP tracker with settings:&#xD;
+  - max frame gap: 2&#xD;
+  - alternative linking cost factor: 1.05&#xD;
+  - linking feature penalties: &#xD;
+  - linking max distance: 15.0&#xD;
+  - gap closing max distance: 15.0&#xD;
+  - merging feature penalties: &#xD;
+  - splitting max distance: 15.0&#xD;
+  - blocking value: Infinity&#xD;
+  - allow gap closing: true&#xD;
+  - allow track splitting: false&#xD;
+  - allow track merging: false&#xD;
+  - merging max distance: 15.0&#xD;
+  - splitting feature penalties: &#xD;
+  - cutoff percentile: 0.9&#xD;
+  - gap closing feature penalties: &#xD;
+&#xD;
+&#xD;
+Performing spot filtering on the following features:&#xD;
+No feature threshold set, kept the 112 spots.&#xD;
+&#xD;
+Configured detector LoG detector with settings:&#xD;
+  - target channel: 1&#xD;
+  - threshold: 0.8801046735921724&#xD;
+  - do median filtering: false&#xD;
+  - radius: 5.0&#xD;
+  - do subpixel localization: true&#xD;
+&#xD;
+TrackMate v7.14.0 started on:&#xD;
+Tue, 4 Mar 2025 09:32:17&#xD;
+Please note that TrackMate is available through Fiji, and is based on a publication. If you use it successfully for your research please be so kind to cite our work:&#xD;
+Ershov, D., Phan, MS., Pylvänäinen, J.W., Rigaud S.U., et al. TrackMate 7: integrating state-of-the-art segmentation algorithms into tracking pipelines. Nat Methods (2022). https://doi.org/10.1038/s41592-022-01507-1&#xD;
+https://doi.org/10.1038/s41592-022-01507-1&#xD;
+and / or:&#xD;
+Tinevez, JY.; Perry, N. &amp; Schindelin, J. et al. (2017), 'TrackMate: An open and extensible platform for single-particle tracking.', Methods 115: 80-90, PMID 27713081.&#xD;
+https://www.sciencedirect.com/science/article/pii/S1046202316303346&#xD;
+&#xD;
+Numerical feature analyzers:&#xD;
+Spot feature analyzers:&#xD;
+ - Manual spot color provides: Spot color; is manual.&#xD;
+ - Spot intensity provides: Mean ch1, Median ch1, Min ch1, Max ch1, Sum ch1, Std ch1.&#xD;
+ - Spot contrast and SNR provides: Ctrst ch1, SNR ch1.&#xD;
+Edge feature analyzers:&#xD;
+ - Directional change provides: γ rate.&#xD;
+ - Edge speed provides: Speed, Disp.&#xD;
+ - Edge target provides: Source ID, Target ID, Cost.&#xD;
+ - Edge location provides: Edge T, Edge X, Edge Y, Edge Z.&#xD;
+ - Manual edge color provides: Edge color; is manual.&#xD;
+Track feature analyzers:&#xD;
+ - Branching analyzer provides: N spots, N gaps, N splits, N merges, N complex, Lgst gap.&#xD;
+ - Track duration provides: Duration, Track start, Track stop, Track disp.&#xD;
+ - Track index provides: Index, ID.&#xD;
+ - Track location provides: Track X, Track Y, Track Z.&#xD;
+ - Track speed provides: Mean sp., Max speed, Min speed, Med. speed, Std speed.&#xD;
+ - Track quality provides: Mean Q.&#xD;
+ - Track motility analysis provides: Total dist., Max dist., Cfn. ratio, Mn. v. line, Fwd. progr., Mn. γ rate.&#xD;
+&#xD;
+Image region of interest:&#xD;
+Image data:&#xD;
+For the image named: Free(D=1,N=150)2D.tif.&#xD;
+Matching file Free(D=1,N=150)2D.tif in folder: C:\Users\ZachyHeath\ASU Dropbox\Zachary Hendrix\Diffusion\BayesDiffusion\&#xD;
+Geometry:&#xD;
+  X =    0 -  127, dx = 1.00000&#xD;
+  Y =    0 -  127, dy = 1.00000&#xD;
+  Z =    0 -    0, dz = 1.00000&#xD;
+  T =    0 -  149, dt = 1.00000&#xD;
+&#xD;
+Configured detector LoG detector with settings:&#xD;
+  - target channel: 1&#xD;
+  - threshold: 0.19714273469038057&#xD;
+  - do median filtering: false&#xD;
+  - radius: 5.0&#xD;
+  - do subpixel localization: true&#xD;
+&#xD;
+Starting detection process using 20 threads.&#xD;
+Detection processes 20 frames simultaneously and allocates 1 thread per frame.&#xD;
+Found 550 spots.&#xD;
+Detection done in 0.1 s.&#xD;
+&#xD;
+Computing spot quality histogram...&#xD;
+Initial thresholding with a quality threshold above 0.4 ...&#xD;
+Starting initial filtering process.&#xD;
+Retained 150 spots out of 550.&#xD;
+&#xD;
+Calculating spot features...&#xD;
+Calculating features done in 0.0 s.&#xD;
+&#xD;
+Performing spot filtering on the following features:&#xD;
+No feature threshold set, kept the 150 spots.&#xD;
+&#xD;
+Configured detector LoG detector with settings:&#xD;
+  - target channel: 1&#xD;
+  - threshold: 0.19714273469038057&#xD;
+  - do median filtering: false&#xD;
+  - radius: 5.0&#xD;
+  - do subpixel localization: true&#xD;
+&#xD;
+Starting detection process using 20 threads.&#xD;
+Detection processes 20 frames simultaneously and allocates 1 thread per frame.&#xD;
+Found 550 spots.&#xD;
+Detection done in 0.1 s.&#xD;
+&#xD;
+Computing spot quality histogram...&#xD;
+Initial thresholding with a quality threshold above 0.4 ...&#xD;
+Starting initial filtering process.&#xD;
+Retained 150 spots out of 550.&#xD;
+&#xD;
+Calculating spot features...&#xD;
+Calculating features done in 0.0 s.&#xD;
+&#xD;
+Performing spot filtering on the following features:&#xD;
+No feature threshold set, kept the 150 spots.&#xD;
+&#xD;
+Configured tracker Simple LAP tracker with settings:&#xD;
+  - max frame gap: 2&#xD;
+  - alternative linking cost factor: 1.05&#xD;
+  - linking feature penalties: &#xD;
+  - linking max distance: 15.0&#xD;
+  - gap closing max distance: 15.0&#xD;
+  - merging feature penalties: &#xD;
+  - splitting max distance: 15.0&#xD;
+  - blocking value: Infinity&#xD;
+  - allow gap closing: true&#xD;
+  - allow track splitting: false&#xD;
+  - allow track merging: false&#xD;
+  - merging max distance: 15.0&#xD;
+  - splitting feature penalties: &#xD;
+  - cutoff percentile: 0.9&#xD;
+  - gap closing feature penalties: &#xD;
+&#xD;
+Starting tracking process.&#xD;
+Tracking done in 0.0 s.&#xD;
+Found 1 tracks.&#xD;
+  - avg size: 150.0 spots.&#xD;
+  - min size: 150 spots.&#xD;
+  - max size: 150 spots.&#xD;
+&#xD;
+Calculating features done in 0.0 s.&#xD;
+&#xD;
+Performing track filtering on the following features:&#xD;
+No feature threshold set, kept the 1 tracks.&#xD;
+Saving data...&#xD;
+Computing edge features:&#xD;
+  - Directional change in 2 ms.&#xD;
+  - Edge speed in 2 ms.&#xD;
+  - Edge target in 5 ms.&#xD;
+  - Edge location in 1 ms.&#xD;
+Computation done in 10 ms.&#xD;
+Computing track features:&#xD;
+  - Branching analyzer in 0 ms.&#xD;
+  - Track duration in 1 ms.&#xD;
+  - Track index in 0 ms.&#xD;
+  - Track location in 0 ms.&#xD;
+  - Track speed in 0 ms.&#xD;
+  - Track quality in 0 ms.&#xD;
+  - Track motility analysis in 1 ms.&#xD;
+Computation done in 2 ms.</Log>
+  <Model spatialunits="pixel" timeunits="frame">
+    <FeatureDeclarations>
+      <SpotFeatures>
+        <Feature feature="QUALITY" name="Quality" shortname="Quality" dimension="QUALITY" isint="false" />
+        <Feature feature="POSITION_X" name="X" shortname="X" dimension="POSITION" isint="false" />
+        <Feature feature="POSITION_Y" name="Y" shortname="Y" dimension="POSITION" isint="false" />
+        <Feature feature="POSITION_Z" name="Z" shortname="Z" dimension="POSITION" isint="false" />
+        <Feature feature="POSITION_T" name="T" shortname="T" dimension="TIME" isint="false" />
+        <Feature feature="FRAME" name="Frame" shortname="Frame" dimension="NONE" isint="true" />
+        <Feature feature="RADIUS" name="Radius" shortname="R" dimension="LENGTH" isint="false" />
+        <Feature feature="VISIBILITY" name="Visibility" shortname="Visibility" dimension="NONE" isint="true" />
+        <Feature feature="MANUAL_SPOT_COLOR" name="Manual spot color" shortname="Spot color" dimension="NONE" isint="true" />
+        <Feature feature="MEAN_INTENSITY_CH1" name="Mean intensity ch1" shortname="Mean ch1" dimension="INTENSITY" isint="false" />
+        <Feature feature="MEDIAN_INTENSITY_CH1" name="Median intensity ch1" shortname="Median ch1" dimension="INTENSITY" isint="false" />
+        <Feature feature="MIN_INTENSITY_CH1" name="Min intensity ch1" shortname="Min ch1" dimension="INTENSITY" isint="false" />
+        <Feature feature="MAX_INTENSITY_CH1" name="Max intensity ch1" shortname="Max ch1" dimension="INTENSITY" isint="false" />
+        <Feature feature="TOTAL_INTENSITY_CH1" name="Sum intensity ch1" shortname="Sum ch1" dimension="INTENSITY" isint="false" />
+        <Feature feature="STD_INTENSITY_CH1" name="Std intensity ch1" shortname="Std ch1" dimension="INTENSITY" isint="false" />
+        <Feature feature="CONTRAST_CH1" name="Contrast ch1" shortname="Ctrst ch1" dimension="NONE" isint="false" />
+        <Feature feature="SNR_CH1" name="Signal/Noise ratio ch1" shortname="SNR ch1" dimension="NONE" isint="false" />
+      </SpotFeatures>
+      <EdgeFeatures>
+        <Feature feature="SPOT_SOURCE_ID" name="Source spot ID" shortname="Source ID" dimension="NONE" isint="true" />
+        <Feature feature="SPOT_TARGET_ID" name="Target spot ID" shortname="Target ID" dimension="NONE" isint="true" />
+        <Feature feature="LINK_COST" name="Edge cost" shortname="Cost" dimension="COST" isint="false" />
+        <Feature feature="DIRECTIONAL_CHANGE_RATE" name="Directional change rate" shortname="γ rate" dimension="ANGLE_RATE" isint="false" />
+        <Feature feature="SPEED" name="Speed" shortname="Speed" dimension="VELOCITY" isint="false" />
+        <Feature feature="DISPLACEMENT" name="Displacement" shortname="Disp." dimension="LENGTH" isint="false" />
+        <Feature feature="EDGE_TIME" name="Edge time" shortname="Edge T" dimension="TIME" isint="false" />
+        <Feature feature="EDGE_X_LOCATION" name="Edge X" shortname="Edge X" dimension="POSITION" isint="false" />
+        <Feature feature="EDGE_Y_LOCATION" name="Edge Y" shortname="Edge Y" dimension="POSITION" isint="false" />
+        <Feature feature="EDGE_Z_LOCATION" name="Edge Z" shortname="Edge Z" dimension="POSITION" isint="false" />
+        <Feature feature="MANUAL_EDGE_COLOR" name="Manual edge color" shortname="Edge color" dimension="NONE" isint="true" />
+      </EdgeFeatures>
+      <TrackFeatures>
+        <Feature feature="TRACK_INDEX" name="Track index" shortname="Index" dimension="NONE" isint="true" />
+        <Feature feature="TRACK_ID" name="Track ID" shortname="ID" dimension="NONE" isint="true" />
+        <Feature feature="NUMBER_SPOTS" name="Number of spots in track" shortname="N spots" dimension="NONE" isint="true" />
+        <Feature feature="NUMBER_GAPS" name="Number of gaps" shortname="N gaps" dimension="NONE" isint="true" />
+        <Feature feature="NUMBER_SPLITS" name="Number of split events" shortname="N splits" dimension="NONE" isint="true" />
+        <Feature feature="NUMBER_MERGES" name="Number of merge events" shortname="N merges" dimension="NONE" isint="true" />
+        <Feature feature="NUMBER_COMPLEX" name="Number of complex points" shortname="N complex" dimension="NONE" isint="true" />
+        <Feature feature="LONGEST_GAP" name="Longest gap" shortname="Lgst gap" dimension="NONE" isint="true" />
+        <Feature feature="TRACK_DURATION" name="Track duration" shortname="Duration" dimension="TIME" isint="false" />
+        <Feature feature="TRACK_START" name="Track start" shortname="Track start" dimension="TIME" isint="false" />
+        <Feature feature="TRACK_STOP" name="Track stop" shortname="Track stop" dimension="TIME" isint="false" />
+        <Feature feature="TRACK_DISPLACEMENT" name="Track displacement" shortname="Track disp." dimension="LENGTH" isint="false" />
+        <Feature feature="TRACK_X_LOCATION" name="Track mean X" shortname="Track X" dimension="POSITION" isint="false" />
+        <Feature feature="TRACK_Y_LOCATION" name="Track mean Y" shortname="Track Y" dimension="POSITION" isint="false" />
+        <Feature feature="TRACK_Z_LOCATION" name="Track mean Z" shortname="Track Z" dimension="POSITION" isint="false" />
+        <Feature feature="TRACK_MEAN_SPEED" name="Track mean speed" shortname="Mean sp." dimension="VELOCITY" isint="false" />
+        <Feature feature="TRACK_MAX_SPEED" name="Track max speed" shortname="Max speed" dimension="VELOCITY" isint="false" />
+        <Feature feature="TRACK_MIN_SPEED" name="Track min speed" shortname="Min speed" dimension="VELOCITY" isint="false" />
+        <Feature feature="TRACK_MEDIAN_SPEED" name="Track median speed" shortname="Med. speed" dimension="VELOCITY" isint="false" />
+        <Feature feature="TRACK_STD_SPEED" name="Track std speed" shortname="Std speed" dimension="VELOCITY" isint="false" />
+        <Feature feature="TRACK_MEAN_QUALITY" name="Track mean quality" shortname="Mean Q" dimension="QUALITY" isint="false" />
+        <Feature feature="TOTAL_DISTANCE_TRAVELED" name="Total distance traveled" shortname="Total dist." dimension="LENGTH" isint="false" />
+        <Feature feature="MAX_DISTANCE_TRAVELED" name="Max distance traveled" shortname="Max dist." dimension="LENGTH" isint="false" />
+        <Feature feature="CONFINEMENT_RATIO" name="Confinement ratio" shortname="Cfn. ratio" dimension="NONE" isint="false" />
+        <Feature feature="MEAN_STRAIGHT_LINE_SPEED" name="Mean straight line speed" shortname="Mn. v. line" dimension="VELOCITY" isint="false" />
+        <Feature feature="LINEARITY_OF_FORWARD_PROGRESSION" name="Linearity of forward progression" shortname="Fwd. progr." dimension="NONE" isint="false" />
+        <Feature feature="MEAN_DIRECTIONAL_CHANGE_RATE" name="Mean directional change rate" shortname="Mn. γ rate" dimension="ANGLE_RATE" isint="false" />
+      </TrackFeatures>
+    </FeatureDeclarations>
+    <AllSpots nspots="150">
+      <SpotsInFrame frame="0">
+        <Spot ID="3623" name="ID3623" STD_INTENSITY_CH1="7.4089403363245205" QUALITY="0.9026056528091431" POSITION_T="0.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1802.0" CONTRAST_CH1="0.08697149416491298" SNR_CH1="0.4012506297443552" FRAME="0" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="67.13525186931166" POSITION_Y="61.78142676428126" MEAN_INTENSITY_CH1="18.577319587628867" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="1">
+        <Spot ID="3615" name="ID3615" STD_INTENSITY_CH1="7.85325025189573" QUALITY="0.9031352996826172" POSITION_T="1.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1825.0" CONTRAST_CH1="0.07968379900353866" SNR_CH1="0.3536267746191485" FRAME="1" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="66.59750670806977" POSITION_Y="58.78125504868899" MEAN_INTENSITY_CH1="18.814432989690722" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="2">
+        <Spot ID="3607" name="ID3607" STD_INTENSITY_CH1="6.322075815085094" QUALITY="0.8678587079048157" POSITION_T="2.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1842.0" CONTRAST_CH1="0.09091270705046116" SNR_CH1="0.50063680799678" FRAME="2" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="65.81892402525125" POSITION_Y="59.83195074498433" MEAN_INTENSITY_CH1="18.989690721649485" POSITION_Z="0.0" MAX_INTENSITY_CH1="45.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="3">
+        <Spot ID="3586" name="ID3586" STD_INTENSITY_CH1="7.1338606205862956" QUALITY="0.9397850036621094" POSITION_T="3.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1837.0" CONTRAST_CH1="0.08548674439525165" SNR_CH1="0.4181355100619757" FRAME="3" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="64.82402438939594" POSITION_Y="62.75681687861902" MEAN_INTENSITY_CH1="18.938144329896907" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="4">
+        <Spot ID="3631" name="ID3631" STD_INTENSITY_CH1="7.187295492384137" QUALITY="0.8985273241996765" POSITION_T="4.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1812.0" CONTRAST_CH1="0.08794085524657651" SNR_CH1="0.4201809447155794" FRAME="4" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="62.41007470914244" POSITION_Y="64.43053989885654" MEAN_INTENSITY_CH1="18.68041237113402" POSITION_Z="0.0" MAX_INTENSITY_CH1="46.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="5">
+        <Spot ID="3642" name="ID3642" STD_INTENSITY_CH1="6.698928595670871" QUALITY="0.9473616480827332" POSITION_T="5.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1867.0" CONTRAST_CH1="0.10169562431605854" SNR_CH1="0.530441962310578" FRAME="5" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="59.45789808880153" POSITION_Y="64.27746377016112" MEAN_INTENSITY_CH1="19.24742268041237" POSITION_Z="0.0" MAX_INTENSITY_CH1="40.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="6">
+        <Spot ID="3592" name="ID3592" STD_INTENSITY_CH1="8.51142601755039" QUALITY="1.0232608318328857" POSITION_T="6.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1861.0" CONTRAST_CH1="0.09273794669608398" SNR_CH1="0.3825989353584907" FRAME="6" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="58.91858815023152" POSITION_Y="62.914417512264556" MEAN_INTENSITY_CH1="19.185567010309278" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="7">
+        <Spot ID="3605" name="ID3605" STD_INTENSITY_CH1="7.065659170870072" QUALITY="0.9613803625106812" POSITION_T="7.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1861.0" CONTRAST_CH1="0.09611572391179168" SNR_CH1="0.47620064972747456" FRAME="7" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="59.32941113574362" POSITION_Y="62.40529272004582" MEAN_INTENSITY_CH1="19.185567010309278" POSITION_Z="0.0" MAX_INTENSITY_CH1="52.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="8">
+        <Spot ID="3649" name="ID3649" STD_INTENSITY_CH1="6.667353916466612" QUALITY="0.8656336665153503" POSITION_T="8.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1820.0" CONTRAST_CH1="0.07589806143797913" SNR_CH1="0.39704131343758037" FRAME="8" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="58.811453517937274" POSITION_Y="59.18948090984721" MEAN_INTENSITY_CH1="18.762886597938145" POSITION_Z="0.0" MAX_INTENSITY_CH1="51.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="9">
+        <Spot ID="3612" name="ID3612" STD_INTENSITY_CH1="6.934694759608004" QUALITY="0.8482887148857117" POSITION_T="9.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1807.0" CONTRAST_CH1="0.06786093084690006" SNR_CH1="0.34142410468035306" FRAME="9" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="60.86841202738674" POSITION_Y="56.60644692801713" MEAN_INTENSITY_CH1="18.628865979381445" POSITION_Z="0.0" MAX_INTENSITY_CH1="47.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="10">
+        <Spot ID="3618" name="ID3618" STD_INTENSITY_CH1="8.19159530720213" QUALITY="0.8750497698783875" POSITION_T="10.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1788.0" CONTRAST_CH1="0.07286765471404724" SNR_CH1="0.3056651505852917" FRAME="10" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="63.05316343568139" POSITION_Y="57.218960357791815" MEAN_INTENSITY_CH1="18.432989690721648" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="11">
+        <Spot ID="3633" name="ID3633" STD_INTENSITY_CH1="8.45943676888334" QUALITY="1.0055551528930664" POSITION_T="11.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1841.0" CONTRAST_CH1="0.08471252440332765" SNR_CH1="0.35043184920642817" FRAME="11" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="63.88120857817289" POSITION_Y="55.97124809619896" MEAN_INTENSITY_CH1="18.97938144329897" POSITION_Z="0.0" MAX_INTENSITY_CH1="64.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="12">
+        <Spot ID="3636" name="ID3636" STD_INTENSITY_CH1="6.464232147042611" QUALITY="0.7554398775100708" POSITION_T="12.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1816.0" CONTRAST_CH1="0.06907887149759308" SNR_CH1="0.3742765766345221" FRAME="12" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="62.974830994641266" POSITION_Y="58.459135305891806" MEAN_INTENSITY_CH1="18.721649484536083" POSITION_Z="0.0" MAX_INTENSITY_CH1="41.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="13">
+        <Spot ID="3599" name="ID3599" STD_INTENSITY_CH1="7.629790478718332" QUALITY="0.9488863945007324" POSITION_T="13.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1855.0" CONTRAST_CH1="0.09862158503908729" SNR_CH1="0.45000093283298775" FRAME="13" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="61.517152350270464" POSITION_Y="60.86896108013648" MEAN_INTENSITY_CH1="19.123711340206185" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="14">
+        <Spot ID="3588" name="ID3588" STD_INTENSITY_CH1="9.369170581663894" QUALITY="1.0344730615615845" POSITION_T="14.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1821.0" CONTRAST_CH1="0.08522412039070278" SNR_CH1="0.3147097157551566" FRAME="14" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="61.123252021490174" POSITION_Y="63.8764425968214" MEAN_INTENSITY_CH1="18.77319587628866" POSITION_Z="0.0" MAX_INTENSITY_CH1="77.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="15">
+        <Spot ID="3655" name="ID3655" STD_INTENSITY_CH1="7.977793492152855" QUALITY="0.8922156095504761" POSITION_T="15.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1789.0" CONTRAST_CH1="0.06516721133744623" SNR_CH1="0.2828766885371039" FRAME="15" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="60.48963432551507" POSITION_Y="64.1767238210437" MEAN_INTENSITY_CH1="18.443298969072163" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="16">
+        <Spot ID="3596" name="ID3596" STD_INTENSITY_CH1="7.818371504967688" QUALITY="0.8723034858703613" POSITION_T="16.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1797.0" CONTRAST_CH1="0.06945758330779592" SNR_CH1="0.3077840710527365" FRAME="16" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="60.67973965634427" POSITION_Y="64.08553725826974" MEAN_INTENSITY_CH1="18.52577319587629" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="17">
+        <Spot ID="3624" name="ID3624" STD_INTENSITY_CH1="8.419048011254453" QUALITY="1.028673529624939" POSITION_T="17.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1831.0" CONTRAST_CH1="0.08981680849008308" SNR_CH1="0.36956236411768456" FRAME="17" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="57.148498564953634" POSITION_Y="63.327976283201345" MEAN_INTENSITY_CH1="18.876288659793815" POSITION_Z="0.0" MAX_INTENSITY_CH1="58.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="18">
+        <Spot ID="3689" name="ID3689" STD_INTENSITY_CH1="7.545309869775256" QUALITY="0.8787883520126343" POSITION_T="18.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1811.0" CONTRAST_CH1="0.0795707056664628" SNR_CH1="0.3647554166127691" FRAME="18" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="56.68583220389242" POSITION_Y="64.52200875924044" MEAN_INTENSITY_CH1="18.670103092783506" POSITION_Z="0.0" MAX_INTENSITY_CH1="57.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="19">
+        <Spot ID="3651" name="ID3651" STD_INTENSITY_CH1="9.52231057177981" QUALITY="1.0683656930923462" POSITION_T="19.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1848.0" CONTRAST_CH1="0.09486780715396577" SNR_CH1="0.346716940900562" FRAME="19" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="57.386805865786464" POSITION_Y="64.40362662099764" MEAN_INTENSITY_CH1="19.051546391752577" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="20">
+        <Spot ID="3692" name="ID3692" STD_INTENSITY_CH1="7.849269999108221" QUALITY="0.7968632578849792" POSITION_T="20.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1764.0" CONTRAST_CH1="0.06451340515625366" SNR_CH1="0.2808189458354237" FRAME="20" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="57.64652477906492" POSITION_Y="64.13357953415778" MEAN_INTENSITY_CH1="18.185567010309278" POSITION_Z="0.0" MAX_INTENSITY_CH1="55.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="21">
+        <Spot ID="3707" name="ID3707" STD_INTENSITY_CH1="9.515880198122355" QUALITY="1.0526872873306274" POSITION_T="21.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1842.0" CONTRAST_CH1="0.08834646762944422" SNR_CH1="0.32398204260152" FRAME="21" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="58.29169086105853" POSITION_Y="62.41433986528499" MEAN_INTENSITY_CH1="18.989690721649485" POSITION_Z="0.0" MAX_INTENSITY_CH1="64.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="22">
+        <Spot ID="3657" name="ID3657" STD_INTENSITY_CH1="5.078169029018751" QUALITY="0.6250274181365967" POSITION_T="22.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1752.0" CONTRAST_CH1="0.06943628288349846" SNR_CH1="0.4618668158252577" FRAME="22" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="59.1483084827172" POSITION_Y="58.92061384622372" MEAN_INTENSITY_CH1="18.061855670103093" POSITION_Z="0.0" MAX_INTENSITY_CH1="33.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="23">
+        <Spot ID="3678" name="ID3678" STD_INTENSITY_CH1="8.272709034931198" QUALITY="1.0258461236953735" POSITION_T="23.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1826.0" CONTRAST_CH1="0.08518265146483738" SNR_CH1="0.3572396019838004" FRAME="23" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="60.93586696779411" POSITION_Y="54.358981973957555" MEAN_INTENSITY_CH1="18.824742268041238" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="24">
+        <Spot ID="3662" name="ID3662" STD_INTENSITY_CH1="6.53139720768352" QUALITY="0.8470749855041504" POSITION_T="24.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1824.0" CONTRAST_CH1="0.09015247308806512" SNR_CH1="0.47617588728721494" FRAME="24" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="60.05640571521462" POSITION_Y="54.471988520751836" MEAN_INTENSITY_CH1="18.804123711340207" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="25">
+        <Spot ID="3668" name="ID3668" STD_INTENSITY_CH1="7.645678540433321" QUALITY="1.012131929397583" POSITION_T="25.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1801.0" CONTRAST_CH1="0.0895513965105859" SNR_CH1="0.39919085271547994" FRAME="25" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="58.12027466619165" POSITION_Y="53.82224262970175" MEAN_INTENSITY_CH1="18.567010309278352" POSITION_Z="0.0" MAX_INTENSITY_CH1="55.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="26">
+        <Spot ID="3698" name="ID3698" STD_INTENSITY_CH1="6.937172022524963" QUALITY="0.903370201587677" POSITION_T="26.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1789.0" CONTRAST_CH1="0.07982739049746845" SNR_CH1="0.3930825197602471" FRAME="26" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="57.67423792718608" POSITION_Y="56.12813927520815" MEAN_INTENSITY_CH1="18.443298969072163" POSITION_Z="0.0" MAX_INTENSITY_CH1="46.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="27">
+        <Spot ID="3717" name="ID3717" STD_INTENSITY_CH1="7.6603982292651" QUALITY="1.0190340280532837" POSITION_T="27.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1875.0" CONTRAST_CH1="0.09656779734990655" SNR_CH1="0.44443169545439515" FRAME="27" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="56.89123682480299" POSITION_Y="54.43994857665316" MEAN_INTENSITY_CH1="19.329896907216494" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="28">
+        <Spot ID="3674" name="ID3674" STD_INTENSITY_CH1="6.692689759725256" QUALITY="0.8229305148124695" POSITION_T="28.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1799.0" CONTRAST_CH1="0.06955055681263596" SNR_CH1="0.36040269024324023" FRAME="28" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="55.8629442737284" POSITION_Y="56.563839891959326" MEAN_INTENSITY_CH1="18.54639175257732" POSITION_Z="0.0" MAX_INTENSITY_CH1="46.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="29">
+        <Spot ID="3704" name="ID3704" STD_INTENSITY_CH1="7.407505249449275" QUALITY="0.9449900388717651" POSITION_T="29.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1837.0" CONTRAST_CH1="0.08956470836888193" SNR_CH1="0.42031930580903015" FRAME="29" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="55.277675889811725" POSITION_Y="59.04009729941349" MEAN_INTENSITY_CH1="18.938144329896907" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="30">
+        <Spot ID="3665" name="ID3665" STD_INTENSITY_CH1="7.915346245463114" QUALITY="0.9648882150650024" POSITION_T="30.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1825.0" CONTRAST_CH1="0.08514421812929658" SNR_CH1="0.37300865933382976" FRAME="30" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="55.76833305680861" POSITION_Y="60.231617332833544" MEAN_INTENSITY_CH1="18.814432989690722" POSITION_Z="0.0" MAX_INTENSITY_CH1="59.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="31">
+        <Spot ID="3715" name="ID3715" STD_INTENSITY_CH1="7.190477308046092" QUALITY="0.8972059488296509" POSITION_T="31.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1816.0" CONTRAST_CH1="0.07422890667420072" SNR_CH1="0.3598260609809499" FRAME="31" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="52.52175546332398" POSITION_Y="59.608738505250116" MEAN_INTENSITY_CH1="18.721649484536083" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="32">
+        <Spot ID="3685" name="ID3685" STD_INTENSITY_CH1="7.471998127257908" QUALITY="0.8933307528495789" POSITION_T="32.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1832.0" CONTRAST_CH1="0.08657745673118951" SNR_CH1="0.4028015284858024" FRAME="32" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="51.848933423394755" POSITION_Y="61.95895826333039" MEAN_INTENSITY_CH1="18.88659793814433" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="33">
+        <Spot ID="3686" name="ID3686" STD_INTENSITY_CH1="7.213961263647182" QUALITY="0.9333060383796692" POSITION_T="33.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1841.0" CONTRAST_CH1="0.08494389335890005" SNR_CH1="0.4119676621647516" FRAME="33" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="55.864948654560266" POSITION_Y="62.7762040260812" MEAN_INTENSITY_CH1="18.97938144329897" POSITION_Z="0.0" MAX_INTENSITY_CH1="52.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="34">
+        <Spot ID="3683" name="ID3683" STD_INTENSITY_CH1="7.037378724547571" QUALITY="0.8153772354125977" POSITION_T="34.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1781.0" CONTRAST_CH1="0.06917128853924931" SNR_CH1="0.33759020345392937" FRAME="34" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="57.08858298287505" POSITION_Y="60.11432030904002" MEAN_INTENSITY_CH1="18.36082474226804" POSITION_Z="0.0" MAX_INTENSITY_CH1="46.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="35">
+        <Spot ID="3702" name="ID3702" STD_INTENSITY_CH1="6.864702534958873" QUALITY="0.8183716535568237" POSITION_T="35.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1774.0" CONTRAST_CH1="0.07082535167172871" SNR_CH1="0.35241975838277145" FRAME="35" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="56.96288786879157" POSITION_Y="60.732378656595486" MEAN_INTENSITY_CH1="18.288659793814432" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="36">
+        <Spot ID="3725" name="ID3725" STD_INTENSITY_CH1="7.934682882123429" QUALITY="0.939635157585144" POSITION_T="36.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1809.0" CONTRAST_CH1="0.07960437754487384" SNR_CH1="0.3466087864627038" FRAME="36" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="55.17735762304884" POSITION_Y="63.15299901733795" MEAN_INTENSITY_CH1="18.649484536082475" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="37">
+        <Spot ID="3727" name="ID3727" STD_INTENSITY_CH1="8.677114209030764" QUALITY="1.0570030212402344" POSITION_T="37.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1867.0" CONTRAST_CH1="0.09794369800821114" SNR_CH1="0.39575252346195083" FRAME="37" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="56.527542946933195" POSITION_Y="60.92792946952046" MEAN_INTENSITY_CH1="19.24742268041237" POSITION_Z="0.0" MAX_INTENSITY_CH1="62.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="38">
+        <Spot ID="3720" name="ID3720" STD_INTENSITY_CH1="8.660650833062931" QUALITY="1.022175669670105" POSITION_T="38.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1825.0" CONTRAST_CH1="0.08748458878029854" SNR_CH1="0.3495256436500775" FRAME="38" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="54.82332767910239" POSITION_Y="60.25086603518425" MEAN_INTENSITY_CH1="18.814432989690722" POSITION_Z="0.0" MAX_INTENSITY_CH1="58.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="39">
+        <Spot ID="3755" name="ID3755" STD_INTENSITY_CH1="8.208580813336258" QUALITY="0.9982540011405945" POSITION_T="39.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1868.0" CONTRAST_CH1="0.0883662787853753" SNR_CH1="0.38095926871511576" FRAME="39" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="52.6590801847186" POSITION_Y="61.94485388486863" MEAN_INTENSITY_CH1="19.257731958762886" POSITION_Z="0.0" MAX_INTENSITY_CH1="61.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="40">
+        <Spot ID="3741" name="ID3741" STD_INTENSITY_CH1="7.195598119851157" QUALITY="0.9256275296211243" POSITION_T="40.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1818.0" CONTRAST_CH1="0.08675184936112983" SNR_CH1="0.41584702083098135" FRAME="40" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="51.06754388901255" POSITION_Y="62.7177539573862" MEAN_INTENSITY_CH1="18.742268041237114" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="41">
+        <Spot ID="3761" name="ID3761" STD_INTENSITY_CH1="8.906347402554138" QUALITY="0.9492877125740051" POSITION_T="41.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1821.0" CONTRAST_CH1="0.07709267872808832" SNR_CH1="0.30173704879236957" FRAME="41" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.82440086068073" POSITION_Y="63.051789669777506" MEAN_INTENSITY_CH1="18.77319587628866" POSITION_Z="0.0" MAX_INTENSITY_CH1="62.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="42">
+        <Spot ID="3746" name="ID3746" STD_INTENSITY_CH1="6.811543290116209" QUALITY="0.882451057434082" POSITION_T="42.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1798.0" CONTRAST_CH1="0.07832601938401705" SNR_CH1="0.39532874966009535" FRAME="42" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.72940839643924" POSITION_Y="66.11081359354995" MEAN_INTENSITY_CH1="18.536082474226806" POSITION_Z="0.0" MAX_INTENSITY_CH1="44.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="43">
+        <Spot ID="3737" name="ID3737" STD_INTENSITY_CH1="7.439330790580818" QUALITY="1.009507417678833" POSITION_T="43.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1842.0" CONTRAST_CH1="0.09372607884081734" SNR_CH1="0.4374877507671241" FRAME="43" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.69130284732787" POSITION_Y="66.09445003885018" MEAN_INTENSITY_CH1="18.989690721649485" POSITION_Z="0.0" MAX_INTENSITY_CH1="46.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="44">
+        <Spot ID="3763" name="ID3763" STD_INTENSITY_CH1="8.503713561138857" QUALITY="1.0558215379714966" POSITION_T="44.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1867.0" CONTRAST_CH1="0.0964267675245945" SNR_CH1="0.39811811128919394" FRAME="44" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.217240756775176" POSITION_Y="67.06096969471689" MEAN_INTENSITY_CH1="19.24742268041237" POSITION_Z="0.0" MAX_INTENSITY_CH1="64.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="45">
+        <Spot ID="3732" name="ID3732" STD_INTENSITY_CH1="7.225533428981789" QUALITY="0.9219158291816711" POSITION_T="45.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1843.0" CONTRAST_CH1="0.08478909245845759" SNR_CH1="0.41106297312500173" FRAME="45" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.44688641324122" POSITION_Y="68.54140711871153" MEAN_INTENSITY_CH1="19.0" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="46">
+        <Spot ID="3750" name="ID3750" STD_INTENSITY_CH1="7.522175121379522" QUALITY="0.9038572311401367" POSITION_T="46.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1829.0" CONTRAST_CH1="0.07996302975355744" SNR_CH1="0.3712007793245593" FRAME="46" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.28258738900951" POSITION_Y="67.24842550595352" MEAN_INTENSITY_CH1="18.855670103092784" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="47">
+        <Spot ID="3772" name="ID3772" STD_INTENSITY_CH1="8.920852824717764" QUALITY="1.0950452089309692" POSITION_T="47.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1839.0" CONTRAST_CH1="0.09930263655353239" SNR_CH1="0.3839521696350892" FRAME="47" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.999540417163864" POSITION_Y="68.41162622029964" MEAN_INTENSITY_CH1="18.95876288659794" POSITION_Z="0.0" MAX_INTENSITY_CH1="70.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="48">
+        <Spot ID="3753" name="ID3753" STD_INTENSITY_CH1="7.817794597655659" QUALITY="0.9057356119155884" POSITION_T="48.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1785.0" CONTRAST_CH1="0.06750749785775485" SNR_CH1="0.29770991817774184" FRAME="48" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.89342070167175" POSITION_Y="70.92499859380955" MEAN_INTENSITY_CH1="18.4020618556701" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="49">
+        <Spot ID="3777" name="ID3777" STD_INTENSITY_CH1="6.9657359742693545" QUALITY="0.9499948620796204" POSITION_T="49.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1819.0" CONTRAST_CH1="0.0960331940505218" SNR_CH1="0.4717605463770909" FRAME="49" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.31888045727852" POSITION_Y="74.7341245165136" MEAN_INTENSITY_CH1="18.75257731958763" POSITION_Z="0.0" MAX_INTENSITY_CH1="55.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="50">
+        <Spot ID="3782" name="ID3782" STD_INTENSITY_CH1="9.286902797697582" QUALITY="1.092099666595459" POSITION_T="50.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1884.0" CONTRAST_CH1="0.0957006327960209" SNR_CH1="0.3653348958216327" FRAME="50" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.3649428116337" POSITION_Y="75.75666374266046" MEAN_INTENSITY_CH1="19.422680412371133" POSITION_Z="0.0" MAX_INTENSITY_CH1="63.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="51">
+        <Spot ID="3768" name="ID3768" STD_INTENSITY_CH1="8.650477213064358" QUALITY="0.9700542688369751" POSITION_T="51.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1832.0" CONTRAST_CH1="0.07767071270221035" SNR_CH1="0.3147131385486102" FRAME="51" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="51.595574293796616" POSITION_Y="75.26357843208176" MEAN_INTENSITY_CH1="18.88659793814433" POSITION_Z="0.0" MAX_INTENSITY_CH1="61.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="52">
+        <Spot ID="3792" name="ID3792" STD_INTENSITY_CH1="7.55115714488873" QUALITY="0.908272385597229" POSITION_T="52.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1815.0" CONTRAST_CH1="0.07996856141846619" SNR_CH1="0.3669691473178464" FRAME="52" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.884403837925895" POSITION_Y="75.14548378228979" MEAN_INTENSITY_CH1="18.711340206185568" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="53">
+        <Spot ID="3809" name="ID3809" STD_INTENSITY_CH1="9.417119017204381" QUALITY="0.9741464853286743" POSITION_T="53.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1816.0" CONTRAST_CH1="0.07734281353452195" SNR_CH1="0.2854447724482342" FRAME="53" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.93158171974936" POSITION_Y="75.3641461509468" MEAN_INTENSITY_CH1="18.721649484536083" POSITION_Z="0.0" MAX_INTENSITY_CH1="72.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="54">
+        <Spot ID="3830" name="ID3830" STD_INTENSITY_CH1="8.777411653013687" QUALITY="0.9417687654495239" POSITION_T="54.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1798.0" CONTRAST_CH1="0.07973227630125418" SNR_CH1="0.31188864323120863" FRAME="54" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.21739318987722" POSITION_Y="74.1044901226809" MEAN_INTENSITY_CH1="18.536082474226806" POSITION_Z="0.0" MAX_INTENSITY_CH1="63.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="55">
+        <Spot ID="3780" name="ID3780" STD_INTENSITY_CH1="7.5123180630490065" QUALITY="0.9296720623970032" POSITION_T="55.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1832.0" CONTRAST_CH1="0.07686824388419704" SNR_CH1="0.3589171022915002" FRAME="55" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.82217778629755" POSITION_Y="74.99012523007562" MEAN_INTENSITY_CH1="18.88659793814433" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="56">
+        <Spot ID="3817" name="ID3817" STD_INTENSITY_CH1="6.1831649832122375" QUALITY="0.7567316293716431" POSITION_T="56.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1793.0" CONTRAST_CH1="0.07227988119598418" SNR_CH1="0.403029641907883" FRAME="56" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.90693259430407" POSITION_Y="75.4317101655943" MEAN_INTENSITY_CH1="18.484536082474225" POSITION_Z="0.0" MAX_INTENSITY_CH1="47.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="57">
+        <Spot ID="3796" name="ID3796" STD_INTENSITY_CH1="7.526471040469367" QUALITY="0.8508492708206177" POSITION_T="57.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1792.0" CONTRAST_CH1="0.07386248023916472" SNR_CH1="0.33766036826067425" FRAME="57" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.22732812930909" POSITION_Y="75.64284031627558" MEAN_INTENSITY_CH1="18.47422680412371" POSITION_Z="0.0" MAX_INTENSITY_CH1="51.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="58">
+        <Spot ID="3789" name="ID3789" STD_INTENSITY_CH1="8.323735882270695" QUALITY="1.0674062967300415" POSITION_T="58.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1882.0" CONTRAST_CH1="0.09690713578133882" SNR_CH1="0.41185608327110645" FRAME="58" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.109196519254475" POSITION_Y="75.40055528502229" MEAN_INTENSITY_CH1="19.4020618556701" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="59">
+        <Spot ID="3799" name="ID3799" STD_INTENSITY_CH1="8.033836304854352" QUALITY="0.9176309704780579" POSITION_T="59.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1780.0" CONTRAST_CH1="0.0739101120307243" SNR_CH1="0.3144062814324016" FRAME="59" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.13423705572794" POSITION_Y="77.00348398411661" MEAN_INTENSITY_CH1="18.350515463917525" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="60">
+        <Spot ID="3815" name="ID3815" STD_INTENSITY_CH1="8.865572045705486" QUALITY="0.9165975451469421" POSITION_T="60.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1811.0" CONTRAST_CH1="0.06747898189336163" SNR_CH1="0.26624357549376393" FRAME="60" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.91097344018713" POSITION_Y="77.3679823981176" MEAN_INTENSITY_CH1="18.670103092783506" POSITION_Z="0.0" MAX_INTENSITY_CH1="65.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="61">
+        <Spot ID="3794" name="ID3794" STD_INTENSITY_CH1="8.414812153214305" QUALITY="0.8753458857536316" POSITION_T="61.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1787.0" CONTRAST_CH1="0.07049639286732115" SNR_CH1="0.2883500797730664" FRAME="61" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.588227443286065" POSITION_Y="76.6872481507537" MEAN_INTENSITY_CH1="18.422680412371133" POSITION_Z="0.0" MAX_INTENSITY_CH1="59.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="62">
+        <Spot ID="3838" name="ID3838" STD_INTENSITY_CH1="7.903357414367896" QUALITY="0.9792667627334595" POSITION_T="62.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1822.0" CONTRAST_CH1="0.08690285795690415" SNR_CH1="0.3800479025420298" FRAME="62" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.191029618151674" POSITION_Y="75.95432745583052" MEAN_INTENSITY_CH1="18.783505154639176" POSITION_Z="0.0" MAX_INTENSITY_CH1="51.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="63">
+        <Spot ID="3804" name="ID3804" STD_INTENSITY_CH1="9.287827824872043" QUALITY="0.9369233250617981" POSITION_T="63.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1785.0" CONTRAST_CH1="0.06982319448606529" SNR_CH1="0.25862471839083584" FRAME="63" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.141150342775916" POSITION_Y="75.90097044084223" MEAN_INTENSITY_CH1="18.4020618556701" POSITION_Z="0.0" MAX_INTENSITY_CH1="76.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="64">
+        <Spot ID="3826" name="ID3826" STD_INTENSITY_CH1="7.648276539235395" QUALITY="0.9729489088058472" POSITION_T="64.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1837.0" CONTRAST_CH1="0.09096993005210911" SNR_CH1="0.41294186571658503" FRAME="64" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.81565053456544" POSITION_Y="75.92216649471906" MEAN_INTENSITY_CH1="18.938144329896907" POSITION_Z="0.0" MAX_INTENSITY_CH1="51.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="65">
+        <Spot ID="3842" name="ID3842" STD_INTENSITY_CH1="9.02852010341296" QUALITY="1.066628098487854" POSITION_T="65.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1859.0" CONTRAST_CH1="0.09406611891478807" SNR_CH1="0.36501502248279183" FRAME="65" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.169941169793745" POSITION_Y="75.25621655527291" MEAN_INTENSITY_CH1="19.164948453608247" POSITION_Z="0.0" MAX_INTENSITY_CH1="71.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="66">
+        <Spot ID="3823" name="ID3823" STD_INTENSITY_CH1="7.18923761306056" QUALITY="0.9424556493759155" POSITION_T="66.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1810.0" CONTRAST_CH1="0.08940642756080584" SNR_CH1="0.42602276540363065" FRAME="66" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.222910456546785" POSITION_Y="77.22876926579552" MEAN_INTENSITY_CH1="18.65979381443299" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="67">
+        <Spot ID="3835" name="ID3835" STD_INTENSITY_CH1="7.003036896461125" QUALITY="0.8344225883483887" POSITION_T="67.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1780.0" CONTRAST_CH1="0.06796333857195944" SNR_CH1="0.3335110360425846" FRAME="67" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.87511940517238" POSITION_Y="79.1076206324915" MEAN_INTENSITY_CH1="18.350515463917525" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="68">
+        <Spot ID="3884" name="ID3884" STD_INTENSITY_CH1="9.749129840454897" QUALITY="0.9742080569267273" POSITION_T="68.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1781.0" CONTRAST_CH1="0.06639082021126376" SNR_CH1="0.23450276219623334" FRAME="68" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="51.06077436753701" POSITION_Y="79.56392947617036" MEAN_INTENSITY_CH1="18.36082474226804" POSITION_Z="0.0" MAX_INTENSITY_CH1="71.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="69">
+        <Spot ID="3857" name="ID3857" STD_INTENSITY_CH1="8.058020912787946" QUALITY="0.9573459625244141" POSITION_T="69.0" MIN_INTENSITY_CH1="7.0" TOTAL_INTENSITY_CH1="1778.0" CONTRAST_CH1="0.07735283178627664" SNR_CH1="0.32664791289006045" FRAME="69" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.749781133427284" POSITION_Y="79.41327162667905" MEAN_INTENSITY_CH1="18.329896907216494" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="70">
+        <Spot ID="3840" name="ID3840" STD_INTENSITY_CH1="7.6777616565625975" QUALITY="0.9659363031387329" POSITION_T="70.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1821.0" CONTRAST_CH1="0.0768621419721555" SNR_CH1="0.34904864387245516" FRAME="70" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.877121125699595" POSITION_Y="80.95512047864638" MEAN_INTENSITY_CH1="18.77319587628866" POSITION_Z="0.0" MAX_INTENSITY_CH1="47.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="71">
+        <Spot ID="3862" name="ID3862" STD_INTENSITY_CH1="7.955498001609216" QUALITY="0.8249098062515259" POSITION_T="71.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1750.0" CONTRAST_CH1="0.06194249434215607" SNR_CH1="0.26455539914625464" FRAME="71" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="46.701214298052406" POSITION_Y="80.81643156656352" MEAN_INTENSITY_CH1="18.04123711340206" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="72">
+        <Spot ID="3848" name="ID3848" STD_INTENSITY_CH1="8.910048287248486" QUALITY="0.9623960256576538" POSITION_T="72.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1835.0" CONTRAST_CH1="0.0818206915970703" SNR_CH1="0.3211605068445508" FRAME="72" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.62339232824084" POSITION_Y="80.35222597557892" MEAN_INTENSITY_CH1="18.917525773195877" POSITION_Z="0.0" MAX_INTENSITY_CH1="67.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="73">
+        <Spot ID="3843" name="ID3843" STD_INTENSITY_CH1="6.538939666242753" QUALITY="0.9511991739273071" POSITION_T="73.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1838.0" CONTRAST_CH1="0.09654153013249751" SNR_CH1="0.5102529584367776" FRAME="73" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.288299167885576" POSITION_Y="80.38531969113184" MEAN_INTENSITY_CH1="18.948453608247423" POSITION_Z="0.0" MAX_INTENSITY_CH1="45.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="74">
+        <Spot ID="3872" name="ID3872" STD_INTENSITY_CH1="6.572798130000036" QUALITY="0.8128505945205688" POSITION_T="74.0" MIN_INTENSITY_CH1="6.0" TOTAL_INTENSITY_CH1="1827.0" CONTRAST_CH1="0.07746102302859594" SNR_CH1="0.4120293703208479" FRAME="74" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="46.84031322140393" POSITION_Y="81.19304409941888" MEAN_INTENSITY_CH1="18.835051546391753" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="75">
+        <Spot ID="3850" name="ID3850" STD_INTENSITY_CH1="6.604971183123883" QUALITY="0.8766199350357056" POSITION_T="75.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1819.0" CONTRAST_CH1="0.0775851969415973" SNR_CH1="0.40883426115726534" FRAME="75" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.76224156952716" POSITION_Y="81.71453690716694" MEAN_INTENSITY_CH1="18.75257731958763" POSITION_Z="0.0" MAX_INTENSITY_CH1="42.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="76">
+        <Spot ID="3893" name="ID3893" STD_INTENSITY_CH1="8.473820103575857" QUALITY="1.0498619079589844" POSITION_T="76.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1851.0" CONTRAST_CH1="0.08647696809349427" SNR_CH1="0.35848036307960596" FRAME="76" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.75272732396951" POSITION_Y="84.58328076872013" MEAN_INTENSITY_CH1="19.082474226804123" POSITION_Z="0.0" MAX_INTENSITY_CH1="62.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="77">
+        <Spot ID="3853" name="ID3853" STD_INTENSITY_CH1="7.568090113926273" QUALITY="0.9661861658096313" POSITION_T="77.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1836.0" CONTRAST_CH1="0.08382526564344746" SNR_CH1="0.3868657755751076" FRAME="77" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.25919597295699" POSITION_Y="85.56491331963505" MEAN_INTENSITY_CH1="18.927835051546392" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="78">
+        <Spot ID="3890" name="ID3890" STD_INTENSITY_CH1="8.396709181930184" QUALITY="0.9316905736923218" POSITION_T="78.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1822.0" CONTRAST_CH1="0.06833412461739408" SNR_CH1="0.2861726049634883" FRAME="78" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.65228010286518" POSITION_Y="81.69613496471533" MEAN_INTENSITY_CH1="18.783505154639176" POSITION_Z="0.0" MAX_INTENSITY_CH1="62.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="79">
+        <Spot ID="3865" name="ID3865" STD_INTENSITY_CH1="7.646296522857579" QUALITY="0.9273320436477661" POSITION_T="79.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1813.0" CONTRAST_CH1="0.08892427368107299" SNR_CH1="0.3992340525725724" FRAME="79" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.30369280190385" POSITION_Y="81.22694425506293" MEAN_INTENSITY_CH1="18.690721649484537" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="80">
+        <Spot ID="3874" name="ID3874" STD_INTENSITY_CH1="9.464597627338557" QUALITY="0.9935458898544312" POSITION_T="80.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1820.0" CONTRAST_CH1="0.0757829730921924" SNR_CH1="0.27930227115284845" FRAME="80" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="46.72256150491026" POSITION_Y="79.85612885727352" MEAN_INTENSITY_CH1="18.762886597938145" POSITION_Z="0.0" MAX_INTENSITY_CH1="74.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="81">
+        <Spot ID="3866" name="ID3866" STD_INTENSITY_CH1="7.958075822105367" QUALITY="0.9020894765853882" POSITION_T="81.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1779.0" CONTRAST_CH1="0.0725763816868424" SNR_CH1="0.3118840892981714" FRAME="81" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.04254799319258" POSITION_Y="81.14951449429243" MEAN_INTENSITY_CH1="18.34020618556701" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="82">
+        <Spot ID="3885" name="ID3885" STD_INTENSITY_CH1="7.5392444041539735" QUALITY="0.9002010226249695" POSITION_T="82.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1825.0" CONTRAST_CH1="0.07279239679500259" SNR_CH1="0.3386597943997137" FRAME="82" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.359301508258305" POSITION_Y="78.84071132040822" MEAN_INTENSITY_CH1="18.814432989690722" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="83">
+        <Spot ID="3880" name="ID3880" STD_INTENSITY_CH1="7.89767572054852" QUALITY="1.0166852474212646" POSITION_T="83.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1839.0" CONTRAST_CH1="0.0880035321062943" SNR_CH1="0.38833853786146677" FRAME="83" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.33330085478639" POSITION_Y="76.76969817920468" MEAN_INTENSITY_CH1="18.95876288659794" POSITION_Z="0.0" MAX_INTENSITY_CH1="59.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="84">
+        <Spot ID="3878" name="ID3878" STD_INTENSITY_CH1="8.179945722771723" QUALITY="0.9350414276123047" POSITION_T="84.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1803.0" CONTRAST_CH1="0.07203805348609156" SNR_CH1="0.3053903671046553" FRAME="84" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="49.612159450951346" POSITION_Y="76.1678136351303" MEAN_INTENSITY_CH1="18.587628865979383" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="85">
+        <Spot ID="3895" name="ID3895" STD_INTENSITY_CH1="8.083953283343813" QUALITY="1.0369938611984253" POSITION_T="85.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1837.0" CONTRAST_CH1="0.09520742750298375" SNR_CH1="0.4073034351424727" FRAME="85" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.43931882416345" POSITION_Y="76.6978319903188" MEAN_INTENSITY_CH1="18.938144329896907" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="86">
+        <Spot ID="3899" name="ID3899" STD_INTENSITY_CH1="7.140450932462203" QUALITY="0.7911754250526428" POSITION_T="86.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1728.0" CONTRAST_CH1="0.04995102840352602" SNR_CH1="0.23738416812166355" FRAME="86" MEDIAN_INTENSITY_CH1="15.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="52.39815309440081" POSITION_Y="75.28626919071841" MEAN_INTENSITY_CH1="17.814432989690722" POSITION_Z="0.0" MAX_INTENSITY_CH1="45.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="87">
+        <Spot ID="3916" name="ID3916" STD_INTENSITY_CH1="7.6017722657782905" QUALITY="0.8335905075073242" POSITION_T="87.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1769.0" CONTRAST_CH1="0.06418196224907352" SNR_CH1="0.2893798830476821" FRAME="87" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="53.0933899142186" POSITION_Y="72.86141297028078" MEAN_INTENSITY_CH1="18.237113402061855" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="88">
+        <Spot ID="3935" name="ID3935" STD_INTENSITY_CH1="8.431921122403423" QUALITY="1.0780360698699951" POSITION_T="88.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1835.0" CONTRAST_CH1="0.0982245243643583" SNR_CH1="0.4013253485795279" FRAME="88" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="51.93355987490318" POSITION_Y="72.82459742495774" MEAN_INTENSITY_CH1="18.917525773195877" POSITION_Z="0.0" MAX_INTENSITY_CH1="64.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="89">
+        <Spot ID="3902" name="ID3902" STD_INTENSITY_CH1="8.821894136250036" QUALITY="0.9096469879150391" POSITION_T="89.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1765.0" CONTRAST_CH1="0.06526079206560645" SNR_CH1="0.25271878621292526" FRAME="89" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="51.19047441582571" POSITION_Y="73.39953638068098" MEAN_INTENSITY_CH1="18.195876288659793" POSITION_Z="0.0" MAX_INTENSITY_CH1="66.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="90">
+        <Spot ID="3937" name="ID3937" STD_INTENSITY_CH1="7.238615305871129" QUALITY="0.9357427358627319" POSITION_T="90.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1834.0" CONTRAST_CH1="0.08723552507880332" SNR_CH1="0.41915228787282777" FRAME="90" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="53.17176003244951" POSITION_Y="74.24232984987539" MEAN_INTENSITY_CH1="18.90721649484536" POSITION_Z="0.0" MAX_INTENSITY_CH1="43.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="91">
+        <Spot ID="3906" name="ID3906" STD_INTENSITY_CH1="7.491977381566942" QUALITY="0.9096876382827759" POSITION_T="91.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1822.0" CONTRAST_CH1="0.07015102336906377" SNR_CH1="0.32869955511478904" FRAME="91" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="54.251493013072526" POSITION_Y="74.15815525421179" MEAN_INTENSITY_CH1="18.783505154639176" POSITION_Z="0.0" MAX_INTENSITY_CH1="51.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="92">
+        <Spot ID="3911" name="ID3911" STD_INTENSITY_CH1="7.4639310234637115" QUALITY="0.9364522695541382" POSITION_T="92.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1889.0" CONTRAST_CH1="0.09287866881967409" SNR_CH1="0.44347243955505333" FRAME="92" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="53.484092471539824" POSITION_Y="76.19906816200474" MEAN_INTENSITY_CH1="19.47422680412371" POSITION_Z="0.0" MAX_INTENSITY_CH1="52.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="93">
+        <Spot ID="3925" name="ID3925" STD_INTENSITY_CH1="6.162654262583406" QUALITY="0.8126863241195679" POSITION_T="93.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1774.0" CONTRAST_CH1="0.07836441682307643" SNR_CH1="0.43131784871130996" FRAME="93" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="52.847274719671056" POSITION_Y="74.29280162373112" MEAN_INTENSITY_CH1="18.288659793814432" POSITION_Z="0.0" MAX_INTENSITY_CH1="41.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="94">
+        <Spot ID="3920" name="ID3920" STD_INTENSITY_CH1="9.32734451331691" QUALITY="1.111663818359375" POSITION_T="94.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1897.0" CONTRAST_CH1="0.10269048618318388" SNR_CH1="0.3905207876957579" FRAME="94" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="53.7378376797023" POSITION_Y="72.86392331611626" MEAN_INTENSITY_CH1="19.556701030927837" POSITION_Z="0.0" MAX_INTENSITY_CH1="74.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="95">
+        <Spot ID="3927" name="ID3927" STD_INTENSITY_CH1="7.444294847277066" QUALITY="0.870684027671814" POSITION_T="95.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1780.0" CONTRAST_CH1="0.06611123278609382" SNR_CH1="0.3057225224063155" FRAME="95" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="52.081831486551096" POSITION_Y="73.68169917288448" MEAN_INTENSITY_CH1="18.350515463917525" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="96">
+        <Spot ID="3930" name="ID3930" STD_INTENSITY_CH1="8.02016359278181" QUALITY="0.9295305013656616" POSITION_T="96.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1821.0" CONTRAST_CH1="0.08358802481895905" SNR_CH1="0.3611310631186603" FRAME="96" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="51.92421965834697" POSITION_Y="76.5465708044577" MEAN_INTENSITY_CH1="18.77319587628866" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="97">
+        <Spot ID="3951" name="ID3951" STD_INTENSITY_CH1="7.509086706218806" QUALITY="0.8531721234321594" POSITION_T="97.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1812.0" CONTRAST_CH1="0.076478196825425" SNR_CH1="0.35347746963032667" FRAME="97" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="50.75110443410985" POSITION_Y="75.37471707453737" MEAN_INTENSITY_CH1="18.68041237113402" POSITION_Z="0.0" MAX_INTENSITY_CH1="61.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="98">
+        <Spot ID="3953" name="ID3953" STD_INTENSITY_CH1="7.4400669499629695" QUALITY="0.8481497764587402" POSITION_T="98.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1799.0" CONTRAST_CH1="0.06851588982229155" SNR_CH1="0.3196854706835622" FRAME="98" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.26524038638139" POSITION_Y="75.94208933814132" MEAN_INTENSITY_CH1="18.54639175257732" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="99">
+        <Spot ID="3946" name="ID3946" STD_INTENSITY_CH1="8.092769141099604" QUALITY="1.0773327350616455" POSITION_T="99.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1882.0" CONTRAST_CH1="0.10683046079167159" SNR_CH1="0.4628014678855347" FRAME="99" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.812036946016285" POSITION_Y="76.45343107214221" MEAN_INTENSITY_CH1="19.4020618556701" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="100">
+        <Spot ID="3940" name="ID3940" STD_INTENSITY_CH1="8.107392367251235" QUALITY="1.0346412658691406" POSITION_T="100.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1867.0" CONTRAST_CH1="0.09712636810247761" SNR_CH1="0.4203411266206941" FRAME="100" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.85836161170522" POSITION_Y="76.50237612842658" MEAN_INTENSITY_CH1="19.24742268041237" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="101">
+        <Spot ID="3961" name="ID3961" STD_INTENSITY_CH1="7.617831541082814" QUALITY="0.9102689027786255" POSITION_T="101.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1821.0" CONTRAST_CH1="0.07640136439278901" SNR_CH1="0.34983537069473897" FRAME="101" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="46.04818251172254" POSITION_Y="77.84435268575929" MEAN_INTENSITY_CH1="18.77319587628866" POSITION_Z="0.0" MAX_INTENSITY_CH1="59.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="102">
+        <Spot ID="3960" name="ID3960" STD_INTENSITY_CH1="7.0307987159491665" QUALITY="0.9114456176757812" POSITION_T="102.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1816.0" CONTRAST_CH1="0.08950771707023326" SNR_CH1="0.43752171278894325" FRAME="102" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.29617920168251" POSITION_Y="75.21554488446962" MEAN_INTENSITY_CH1="18.721649484536083" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="103">
+        <Spot ID="3967" name="ID3967" STD_INTENSITY_CH1="7.589033392669422" QUALITY="0.9750149846076965" POSITION_T="103.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1853.0" CONTRAST_CH1="0.09141577419347749" SNR_CH1="0.42167527052515175" FRAME="103" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.221600221088615" POSITION_Y="74.74877799114795" MEAN_INTENSITY_CH1="19.103092783505154" POSITION_Z="0.0" MAX_INTENSITY_CH1="56.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="104">
+        <Spot ID="3966" name="ID3966" STD_INTENSITY_CH1="8.68893764835752" QUALITY="0.9865447878837585" POSITION_T="104.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1779.0" CONTRAST_CH1="0.0852462262830296" SNR_CH1="0.3315999122437089" FRAME="104" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.78404492038676" POSITION_Y="75.93234188580128" MEAN_INTENSITY_CH1="18.34020618556701" POSITION_Z="0.0" MAX_INTENSITY_CH1="59.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="105">
+        <Spot ID="3973" name="ID3973" STD_INTENSITY_CH1="8.695460857188671" QUALITY="1.0264414548873901" POSITION_T="105.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1825.0" CONTRAST_CH1="0.0842108879955399" SNR_CH1="0.3361112185903763" FRAME="105" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.75973460932726" POSITION_Y="76.02934273153205" MEAN_INTENSITY_CH1="18.814432989690722" POSITION_Z="0.0" MAX_INTENSITY_CH1="66.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="106">
+        <Spot ID="3983" name="ID3983" STD_INTENSITY_CH1="7.9665591877608115" QUALITY="0.7947461605072021" POSITION_T="106.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1751.0" CONTRAST_CH1="0.057929716032571896" SNR_CH1="0.24815224232791944" FRAME="106" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.28381082318262" POSITION_Y="75.97910590826403" MEAN_INTENSITY_CH1="18.051546391752577" POSITION_Z="0.0" MAX_INTENSITY_CH1="61.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="107">
+        <Spot ID="3971" name="ID3971" STD_INTENSITY_CH1="8.844579659151647" QUALITY="1.0447078943252563" POSITION_T="107.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1832.0" CONTRAST_CH1="0.08424989317076889" SNR_CH1="0.3318535774386848" FRAME="107" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.24536880610252" POSITION_Y="75.99482156010264" MEAN_INTENSITY_CH1="18.88659793814433" POSITION_Z="0.0" MAX_INTENSITY_CH1="65.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="108">
+        <Spot ID="4033" name="ID4033" STD_INTENSITY_CH1="7.570516149948584" QUALITY="0.9161332845687866" POSITION_T="108.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1826.0" CONTRAST_CH1="0.08588336974261286" SNR_CH1="0.39333214323680254" FRAME="108" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="41.31195963025176" POSITION_Y="76.27343624536452" MEAN_INTENSITY_CH1="18.824742268041238" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="109">
+        <Spot ID="3980" name="ID3980" STD_INTENSITY_CH1="6.690330638689154" QUALITY="0.9188156127929688" POSITION_T="109.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1865.0" CONTRAST_CH1="0.09044578205483428" SNR_CH1="0.4767313998550662" FRAME="109" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="40.641667767471645" POSITION_Y="76.1733410432292" MEAN_INTENSITY_CH1="19.22680412371134" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="110">
+        <Spot ID="3984" name="ID3984" STD_INTENSITY_CH1="6.756154124700015" QUALITY="0.7944270968437195" POSITION_T="110.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1760.0" CONTRAST_CH1="0.06664857561212777" SNR_CH1="0.3356146386559978" FRAME="110" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="40.04352691080059" POSITION_Y="76.49122236624673" MEAN_INTENSITY_CH1="18.144329896907216" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="111">
+        <Spot ID="3994" name="ID3994" STD_INTENSITY_CH1="7.07833864737149" QUALITY="0.9452505111694336" POSITION_T="111.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1863.0" CONTRAST_CH1="0.09049093321539137" SNR_CH1="0.4503216092629408" FRAME="111" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="39.58451230077754" POSITION_Y="75.78635575425423" MEAN_INTENSITY_CH1="19.20618556701031" POSITION_Z="0.0" MAX_INTENSITY_CH1="45.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="112">
+        <Spot ID="4000" name="ID4000" STD_INTENSITY_CH1="5.993266553913174" QUALITY="0.705778956413269" POSITION_T="112.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1794.0" CONTRAST_CH1="0.07001028188385468" SNR_CH1="0.40382293585338164" FRAME="112" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="39.52645663578856" POSITION_Y="72.53974581899976" MEAN_INTENSITY_CH1="18.49484536082474" POSITION_Z="0.0" MAX_INTENSITY_CH1="44.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="113">
+        <Spot ID="3987" name="ID3987" STD_INTENSITY_CH1="8.481458451059268" QUALITY="0.9569727182388306" POSITION_T="113.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1779.0" CONTRAST_CH1="0.08500666221381208" SNR_CH1="0.33883185205727606" FRAME="113" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="39.49209215413531" POSITION_Y="72.56070775552405" MEAN_INTENSITY_CH1="18.34020618556701" POSITION_Z="0.0" MAX_INTENSITY_CH1="58.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="114">
+        <Spot ID="4007" name="ID4007" STD_INTENSITY_CH1="7.7831846899277535" QUALITY="0.9112804532051086" POSITION_T="114.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1816.0" CONTRAST_CH1="0.07792144511922323" SNR_CH1="0.34776562798317456" FRAME="114" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="37.634027716866186" POSITION_Y="73.3335107095264" MEAN_INTENSITY_CH1="18.721649484536083" POSITION_Z="0.0" MAX_INTENSITY_CH1="59.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="115">
+        <Spot ID="4009" name="ID4009" STD_INTENSITY_CH1="7.992546463366489" QUALITY="1.0208998918533325" POSITION_T="115.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1818.0" CONTRAST_CH1="0.10152797826895447" SNR_CH1="0.4322720705143144" FRAME="115" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="37.731091772748385" POSITION_Y="74.10586377625107" MEAN_INTENSITY_CH1="18.742268041237114" POSITION_Z="0.0" MAX_INTENSITY_CH1="53.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="116">
+        <Spot ID="4015" name="ID4015" STD_INTENSITY_CH1="6.568156415171464" QUALITY="0.857742428779602" POSITION_T="116.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1786.0" CONTRAST_CH1="0.07499747335796335" SNR_CH1="0.39114287016625454" FRAME="116" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="41.8403856289498" POSITION_Y="76.12823488413426" MEAN_INTENSITY_CH1="18.412371134020617" POSITION_Z="0.0" MAX_INTENSITY_CH1="45.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="117">
+        <Spot ID="3997" name="ID3997" STD_INTENSITY_CH1="7.218351350546141" QUALITY="0.9050554037094116" POSITION_T="117.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1799.0" CONTRAST_CH1="0.07895352259083839" SNR_CH1="0.37602799704854367" FRAME="117" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.212933079896914" POSITION_Y="76.68213343722373" MEAN_INTENSITY_CH1="18.54639175257732" POSITION_Z="0.0" MAX_INTENSITY_CH1="51.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="118">
+        <Spot ID="4047" name="ID4047" STD_INTENSITY_CH1="6.518790576801224" QUALITY="0.8347288370132446" POSITION_T="118.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1816.0" CONTRAST_CH1="0.08105682740758761" SNR_CH1="0.4306735040775156" FRAME="118" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.638187971639084" POSITION_Y="75.09407221624824" MEAN_INTENSITY_CH1="18.721649484536083" POSITION_Z="0.0" MAX_INTENSITY_CH1="52.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="119">
+        <Spot ID="4017" name="ID4017" STD_INTENSITY_CH1="8.46253365990453" QUALITY="1.013019323348999" POSITION_T="119.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1842.0" CONTRAST_CH1="0.09231758141943133" SNR_CH1="0.37930011322602397" FRAME="119" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.924946241296944" POSITION_Y="75.69207394842213" MEAN_INTENSITY_CH1="18.989690721649485" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="120">
+        <Spot ID="4021" name="ID4021" STD_INTENSITY_CH1="8.728139112728098" QUALITY="0.9988239407539368" POSITION_T="120.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1804.0" CONTRAST_CH1="0.08385633083856338" SNR_CH1="0.32971391191530447" FRAME="120" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.595651855399446" POSITION_Y="75.59604804102761" MEAN_INTENSITY_CH1="18.5979381443299" POSITION_Z="0.0" MAX_INTENSITY_CH1="61.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="121">
+        <Spot ID="4035" name="ID4035" STD_INTENSITY_CH1="7.698002039178024" QUALITY="0.9192249178886414" POSITION_T="121.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1783.0" CONTRAST_CH1="0.07486469828730297" SNR_CH1="0.3326249802935127" FRAME="121" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.7077906554673" POSITION_Y="77.19066886601811" MEAN_INTENSITY_CH1="18.38144329896907" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="122">
+        <Spot ID="4029" name="ID4029" STD_INTENSITY_CH1="7.853113506920509" QUALITY="0.9665313959121704" POSITION_T="122.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1822.0" CONTRAST_CH1="0.07956047843293318" SNR_CH1="0.35254549409798464" FRAME="122" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="41.95781227261683" POSITION_Y="77.22436092070163" MEAN_INTENSITY_CH1="18.783505154639176" POSITION_Z="0.0" MAX_INTENSITY_CH1="58.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="123">
+        <Spot ID="4052" name="ID4052" STD_INTENSITY_CH1="7.573125753410936" QUALITY="0.9332557916641235" POSITION_T="123.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1788.0" CONTRAST_CH1="0.08500304544620874" SNR_CH1="0.3813766818830138" FRAME="123" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="40.935502553082586" POSITION_Y="76.23294628518452" MEAN_INTENSITY_CH1="18.432989690721648" POSITION_Z="0.0" MAX_INTENSITY_CH1="52.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="124">
+        <Spot ID="4040" name="ID4040" STD_INTENSITY_CH1="9.300433700119004" QUALITY="0.89527428150177" POSITION_T="124.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1801.0" CONTRAST_CH1="0.06860964159241587" SNR_CH1="0.256350893437617" FRAME="124" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="40.78114080472901" POSITION_Y="77.6374069796168" MEAN_INTENSITY_CH1="18.567010309278352" POSITION_Z="0.0" MAX_INTENSITY_CH1="73.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="125">
+        <Spot ID="4058" name="ID4058" STD_INTENSITY_CH1="8.405938009195227" QUALITY="0.9617856740951538" POSITION_T="125.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1851.0" CONTRAST_CH1="0.08062279779766152" SNR_CH1="0.3387366879013016" FRAME="125" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="41.85677979888225" POSITION_Y="79.13147418868587" MEAN_INTENSITY_CH1="19.082474226804123" POSITION_Z="0.0" MAX_INTENSITY_CH1="69.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="126">
+        <Spot ID="4053" name="ID4053" STD_INTENSITY_CH1="9.2590394208343" QUALITY="1.0589756965637207" POSITION_T="126.0" MIN_INTENSITY_CH1="8.0" TOTAL_INTENSITY_CH1="1819.0" CONTRAST_CH1="0.08702472547994325" SNR_CH1="0.32428604989318405" FRAME="126" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.61647252204624" POSITION_Y="76.29857180644868" MEAN_INTENSITY_CH1="18.75257731958763" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="127">
+        <Spot ID="4070" name="ID4070" STD_INTENSITY_CH1="7.981023455371436" QUALITY="0.9608135223388672" POSITION_T="127.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1806.0" CONTRAST_CH1="0.07645243615619425" SNR_CH1="0.3313705464975257" FRAME="127" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.605775911121334" POSITION_Y="77.59755034853667" MEAN_INTENSITY_CH1="18.61855670103093" POSITION_Z="0.0" MAX_INTENSITY_CH1="55.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="128">
+        <Spot ID="4067" name="ID4067" STD_INTENSITY_CH1="7.377653288223642" QUALITY="0.927578330039978" POSITION_T="128.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1830.0" CONTRAST_CH1="0.08138977239527927" SNR_CH1="0.384927275315481" FRAME="128" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.15553106387628" POSITION_Y="80.44190752190217" MEAN_INTENSITY_CH1="18.8659793814433" POSITION_Z="0.0" MAX_INTENSITY_CH1="60.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="129">
+        <Spot ID="4061" name="ID4061" STD_INTENSITY_CH1="8.347942520759046" QUALITY="0.8170533180236816" POSITION_T="129.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1770.0" CONTRAST_CH1="0.06088409244156982" SNR_CH1="0.2508926721257618" FRAME="129" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="40.2489388509512" POSITION_Y="80.83476211062931" MEAN_INTENSITY_CH1="18.24742268041237" POSITION_Z="0.0" MAX_INTENSITY_CH1="61.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="130">
+        <Spot ID="4064" name="ID4064" STD_INTENSITY_CH1="6.4190036802780135" QUALITY="0.8839084506034851" POSITION_T="130.0" MIN_INTENSITY_CH1="12.0" TOTAL_INTENSITY_CH1="1820.0" CONTRAST_CH1="0.08471741772495336" SNR_CH1="0.4565813001017634" FRAME="130" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.27089706188437" POSITION_Y="83.58136602454655" MEAN_INTENSITY_CH1="18.762886597938145" POSITION_Z="0.0" MAX_INTENSITY_CH1="42.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="131">
+        <Spot ID="4086" name="ID4086" STD_INTENSITY_CH1="8.642801863688813" QUALITY="0.8859400749206543" POSITION_T="131.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1821.0" CONTRAST_CH1="0.07090263354519756" SNR_CH1="0.28762460168117837" FRAME="131" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.894702351891155" POSITION_Y="83.9606070411391" MEAN_INTENSITY_CH1="18.77319587628866" POSITION_Z="0.0" MAX_INTENSITY_CH1="69.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="132">
+        <Spot ID="4106" name="ID4106" STD_INTENSITY_CH1="7.100650955106463" QUALITY="0.8852251768112183" POSITION_T="132.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1794.0" CONTRAST_CH1="0.0726732609207339" SNR_CH1="0.35293093640566253" FRAME="132" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.60220461626402" POSITION_Y="83.45875626505917" MEAN_INTENSITY_CH1="18.49484536082474" POSITION_Z="0.0" MAX_INTENSITY_CH1="48.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="133">
+        <Spot ID="4073" name="ID4073" STD_INTENSITY_CH1="7.176873774989398" QUALITY="0.9105474352836609" POSITION_T="133.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1813.0" CONTRAST_CH1="0.08233622136609632" SNR_CH1="0.3962319546459634" FRAME="133" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.973020724547105" POSITION_Y="83.30658067794825" MEAN_INTENSITY_CH1="18.690721649484537" POSITION_Z="0.0" MAX_INTENSITY_CH1="47.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="134">
+        <Spot ID="4099" name="ID4099" STD_INTENSITY_CH1="8.538811231714817" QUALITY="1.0163377523422241" POSITION_T="134.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1816.0" CONTRAST_CH1="0.0858529968229037" SNR_CH1="0.34670580884721125" FRAME="134" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="46.49434791142071" POSITION_Y="83.7690522835219" MEAN_INTENSITY_CH1="18.721649484536083" POSITION_Z="0.0" MAX_INTENSITY_CH1="63.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="135">
+        <Spot ID="4094" name="ID4094" STD_INTENSITY_CH1="6.925691747801588" QUALITY="0.9216028451919556" POSITION_T="135.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1825.0" CONTRAST_CH1="0.08584527093404674" SNR_CH1="0.4295427603789996" FRAME="135" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.40273468947715" POSITION_Y="82.83451363210493" MEAN_INTENSITY_CH1="18.814432989690722" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="136">
+        <Spot ID="4078" name="ID4078" STD_INTENSITY_CH1="7.613742323256577" QUALITY="0.9764065742492676" POSITION_T="136.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1817.0" CONTRAST_CH1="0.08918965467107755" SNR_CH1="0.40292664607761847" FRAME="136" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.47485780881268" POSITION_Y="82.90733399984101" MEAN_INTENSITY_CH1="18.7319587628866" POSITION_Z="0.0" MAX_INTENSITY_CH1="51.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="137">
+        <Spot ID="4077" name="ID4077" STD_INTENSITY_CH1="6.962281788149236" QUALITY="0.9028573036193848" POSITION_T="137.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1811.0" CONTRAST_CH1="0.07887237532954258" SNR_CH1="0.39208476019561905" FRAME="137" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="45.334130698783774" POSITION_Y="84.28835735758447" MEAN_INTENSITY_CH1="18.670103092783506" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="138">
+        <Spot ID="4080" name="ID4080" STD_INTENSITY_CH1="8.316017232526868" QUALITY="0.8703163862228394" POSITION_T="138.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1745.0" CONTRAST_CH1="0.05402539388468733" SNR_CH1="0.22176100433950408" FRAME="138" MEDIAN_INTENSITY_CH1="15.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="45.98036681394667" POSITION_Y="85.56036854463463" MEAN_INTENSITY_CH1="17.989690721649485" POSITION_Z="0.0" MAX_INTENSITY_CH1="64.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="139">
+        <Spot ID="4088" name="ID4088" STD_INTENSITY_CH1="5.894111453661077" QUALITY="0.7144546508789062" POSITION_T="139.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1777.0" CONTRAST_CH1="0.07707321486122022" SNR_CH1="0.44482131962530186" FRAME="139" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.56297973948571" POSITION_Y="89.44140907286872" MEAN_INTENSITY_CH1="18.31958762886598" POSITION_Z="0.0" MAX_INTENSITY_CH1="42.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="140">
+        <Spot ID="4109" name="ID4109" STD_INTENSITY_CH1="7.0074058761714415" QUALITY="0.9026288986206055" POSITION_T="140.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1841.0" CONTRAST_CH1="0.08378803454850582" SNR_CH1="0.4187862635265721" FRAME="140" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.93619933060546" POSITION_Y="92.15297250723084" MEAN_INTENSITY_CH1="18.97938144329897" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="141">
+        <Spot ID="4092" name="ID4092" STD_INTENSITY_CH1="8.882719526449488" QUALITY="1.06984543800354" POSITION_T="141.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1861.0" CONTRAST_CH1="0.09998489237748762" SNR_CH1="0.39265067481800103" FRAME="141" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="47.411749420895745" POSITION_Y="90.08775581669852" MEAN_INTENSITY_CH1="19.185567010309278" POSITION_Z="0.0" MAX_INTENSITY_CH1="69.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="142">
+        <Spot ID="4102" name="ID4102" STD_INTENSITY_CH1="6.0125870263257655" QUALITY="0.8465201258659363" POSITION_T="142.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1855.0" CONTRAST_CH1="0.09358158196912439" SNR_CH1="0.544352215979408" FRAME="142" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="45.362816090789934" POSITION_Y="90.65413890909824" MEAN_INTENSITY_CH1="19.123711340206185" POSITION_Z="0.0" MAX_INTENSITY_CH1="39.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="143">
+        <Spot ID="4105" name="ID4105" STD_INTENSITY_CH1="7.6984484311725225" QUALITY="0.8650203943252563" POSITION_T="143.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1769.0" CONTRAST_CH1="0.06848589545519593" SNR_CH1="0.3036793311821275" FRAME="143" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="46.43850104469499" POSITION_Y="92.25162127869856" MEAN_INTENSITY_CH1="18.237113402061855" POSITION_Z="0.0" MAX_INTENSITY_CH1="50.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="144">
+        <Spot ID="4097" name="ID4097" STD_INTENSITY_CH1="7.577364442207749" QUALITY="0.9391828775405884" POSITION_T="144.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1829.0" CONTRAST_CH1="0.08262380097313608" SNR_CH1="0.37982311458622714" FRAME="144" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="46.55079840426087" POSITION_Y="92.57648244571709" MEAN_INTENSITY_CH1="18.855670103092784" POSITION_Z="0.0" MAX_INTENSITY_CH1="49.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="145">
+        <Spot ID="4122" name="ID4122" STD_INTENSITY_CH1="7.488923665202512" QUALITY="0.9536422491073608" POSITION_T="145.0" MIN_INTENSITY_CH1="10.0" TOTAL_INTENSITY_CH1="1819.0" CONTRAST_CH1="0.08596773007856968" SNR_CH1="0.3964515279853777" FRAME="145" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="48.32434924525461" POSITION_Y="91.75384545476582" MEAN_INTENSITY_CH1="18.75257731958763" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="146">
+        <Spot ID="4115" name="ID4115" STD_INTENSITY_CH1="7.1774273885233955" QUALITY="0.9045833349227905" POSITION_T="146.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1773.0" CONTRAST_CH1="0.07832153073347077" SNR_CH1="0.3699398187366355" FRAME="146" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="45.75552142177668" POSITION_Y="93.05571543520071" MEAN_INTENSITY_CH1="18.278350515463917" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="147">
+        <Spot ID="4130" name="ID4130" STD_INTENSITY_CH1="7.4704170288004965" QUALITY="0.8114307522773743" POSITION_T="147.0" MIN_INTENSITY_CH1="9.0" TOTAL_INTENSITY_CH1="1773.0" CONTRAST_CH1="0.061957820184314526" SNR_CH1="0.2855032214642876" FRAME="147" MEDIAN_INTENSITY_CH1="16.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="44.68583702156351" POSITION_Y="94.62514181402871" MEAN_INTENSITY_CH1="18.278350515463917" POSITION_Z="0.0" MAX_INTENSITY_CH1="57.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="148">
+        <Spot ID="4128" name="ID4128" STD_INTENSITY_CH1="7.425127418578794" QUALITY="0.9030348062515259" POSITION_T="148.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1813.0" CONTRAST_CH1="0.07767906552233891" SNR_CH1="0.3628830646092603" FRAME="148" MEDIAN_INTENSITY_CH1="17.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="42.00513540603775" POSITION_Y="94.7609510542427" MEAN_INTENSITY_CH1="18.690721649484537" POSITION_Z="0.0" MAX_INTENSITY_CH1="54.0" />
+      </SpotsInFrame>
+      <SpotsInFrame frame="149">
+        <Spot ID="4133" name="ID4133" STD_INTENSITY_CH1="5.689563605463829" QUALITY="0.7947607040405273" POSITION_T="149.0" MIN_INTENSITY_CH1="11.0" TOTAL_INTENSITY_CH1="1837.0" CONTRAST_CH1="0.09449889342043687" SNR_CH1="0.5747776295171788" FRAME="149" MEDIAN_INTENSITY_CH1="18.0" VISIBILITY="1" RADIUS="5.0" POSITION_X="43.25786596097409" POSITION_Y="95.10362778543467" MEAN_INTENSITY_CH1="18.938144329896907" POSITION_Z="0.0" MAX_INTENSITY_CH1="35.0" />
+      </SpotsInFrame>
+    </AllSpots>
+    <AllTracks>
+      <Track name="Track_13" TRACK_ID="0" TRACK_INDEX="0" NUMBER_SPOTS="150" NUMBER_GAPS="0" NUMBER_SPLITS="0" NUMBER_MERGES="0" NUMBER_COMPLEX="0" LONGEST_GAP="0" TRACK_DURATION="149.0" TRACK_START="0.0" TRACK_STOP="149.0" TRACK_DISPLACEMENT="40.99388538196685" TRACK_X_LOCATION="49.922811570735874" TRACK_Y_LOCATION="73.378667968165" TRACK_Z_LOCATION="0.0" TRACK_MEAN_SPEED="1.9241725292601781" TRACK_MAX_SPEED="4.8993724777409025" TRACK_MIN_SPEED="0.04025320337743589" TRACK_MEDIAN_SPEED="1.8469201021344022" TRACK_STD_SPEED="1.0611683938853167" TRACK_MEAN_QUALITY="0.9278911952177683" TOTAL_DISTANCE_TRAVELED="286.7017068597665" MAX_DISTANCE_TRAVELED="41.46289637555325" CONFINEMENT_RATIO="0.1429844482998424" MEAN_STRAIGHT_LINE_SPEED="0.27512674752997884" LINEARITY_OF_FORWARD_PROGRESSION="0.14298444829984236" MEAN_DIRECTIONAL_CHANGE_RATE="1.3840531376094918">
+        <Edge SPOT_SOURCE_ID="3796" SPOT_TARGET_ID="3789" LINK_COST="0.0726571136635035" DIRECTIONAL_CHANGE_RATE="2.6071061547761976" SPEED="0.26954983521327464" DISPLACEMENT="0.26954983521327464" EDGE_TIME="57.5" EDGE_X_LOCATION="50.168262324281784" EDGE_Y_LOCATION="75.52169780064894" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3980" SPOT_TARGET_ID="3984" LINK_COST="0.4588210199425634" DIRECTIONAL_CHANGE_RATE="0.6367244715492345" SPEED="0.6773632850565222" DISPLACEMENT="0.6773632850565222" EDGE_TIME="109.5" EDGE_X_LOCATION="40.34259733913612" EDGE_Y_LOCATION="76.33228170473797" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4017" SPOT_TARGET_ID="4021" LINK_COST="1.776244539269547" DIRECTIONAL_CHANGE_RATE="2.090045193795569" SPEED="1.332758244870219" DISPLACEMENT="1.332758244870219" EDGE_TIME="119.5" EDGE_X_LOCATION="44.260299048348195" EDGE_Y_LOCATION="75.64406099472487" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4053" SPOT_TARGET_ID="4070" LINK_COST="2.6660664484405237" DIRECTIONAL_CHANGE_RATE="2.2287049547327538" SPEED="1.6328093729644388" DISPLACEMENT="1.6328093729644388" EDGE_TIME="126.5" EDGE_X_LOCATION="43.11112421658379" EDGE_Y_LOCATION="76.94806107749267" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4097" SPOT_TARGET_ID="4122" LINK_COST="3.8222142044709657" DIRECTIONAL_CHANGE_RATE="1.6722773245561406" SPEED="1.9550483892914174" DISPLACEMENT="1.9550483892914174" EDGE_TIME="144.5" EDGE_X_LOCATION="47.437573824757735" EDGE_Y_LOCATION="92.16516395024146" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3946" SPOT_TARGET_ID="3940" LINK_COST="0.004541593185871495" DIRECTIONAL_CHANGE_RATE="0.06099230109520904" SPEED="0.06739134355294822" DISPLACEMENT="0.06739134355294822" EDGE_TIME="99.5" EDGE_X_LOCATION="47.835199278860756" EDGE_Y_LOCATION="76.47790360028439" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4078" SPOT_TARGET_ID="4077" LINK_COST="5.364121194014484" DIRECTIONAL_CHANGE_RATE="2.4244108293749074" SPEED="2.316057251886163" DISPLACEMENT="2.316057251886163" EDGE_TIME="136.5" EDGE_X_LOCATION="44.40449425379823" EDGE_Y_LOCATION="83.59784567871274" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3717" SPOT_TARGET_ID="3674" LINK_COST="5.568299889828441" DIRECTIONAL_CHANGE_RATE="2.256421763690151" SPEED="2.359724536853495" DISPLACEMENT="2.359724536853495" EDGE_TIME="27.5" EDGE_X_LOCATION="56.377090549265695" EDGE_Y_LOCATION="55.50189423430624" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3843" SPOT_TARGET_ID="3872" LINK_COST="12.541025806877574" DIRECTIONAL_CHANGE_RATE="2.8916076948470844" SPEED="3.5413310784050642" DISPLACEMENT="3.5413310784050642" EDGE_TIME="73.5" EDGE_X_LOCATION="48.56430619464476" EDGE_Y_LOCATION="80.78918189527536" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3755" SPOT_TARGET_ID="3741" LINK_COST="3.130362302647402" DIRECTIONAL_CHANGE_RATE="0.2120249292181159" SPEED="1.7692829911145933" DISPLACEMENT="1.7692829911145933" EDGE_TIME="39.5" EDGE_X_LOCATION="51.86331203686557" EDGE_Y_LOCATION="62.331303921127414" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3925" SPOT_TARGET_ID="3920" LINK_COST="2.8347956037519397" DIRECTIONAL_CHANGE_RATE="0.879756531998965" SPEED="1.6836851260707686" DISPLACEMENT="1.6836851260707686" EDGE_TIME="93.5" EDGE_X_LOCATION="53.29255619968668" EDGE_Y_LOCATION="73.57836246992369" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4035" SPOT_TARGET_ID="4029" LINK_COST="0.5636027292918058" DIRECTIONAL_CHANGE_RATE="1.0178648653557583" SPEED="0.7507347929141194" DISPLACEMENT="0.7507347929141194" EDGE_TIME="121.5" EDGE_X_LOCATION="42.33280146404206" EDGE_Y_LOCATION="77.20751489335987" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3707" SPOT_TARGET_ID="3657" LINK_COST="12.93991524600182" DIRECTIONAL_CHANGE_RATE="0.11855667979810353" SPEED="3.597209369219676" DISPLACEMENT="3.597209369219676" EDGE_TIME="21.5" EDGE_X_LOCATION="58.71999967188786" EDGE_Y_LOCATION="60.66747685575436" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3794" SPOT_TARGET_ID="3838" LINK_COST="2.4893345076069506" DIRECTIONAL_CHANGE_RATE="1.8705259850309386" SPEED="1.5777625003805074" DISPLACEMENT="1.5777625003805074" EDGE_TIME="61.5" EDGE_X_LOCATION="48.889628530718866" EDGE_Y_LOCATION="76.32078780329212" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3737" SPOT_TARGET_ID="3763" LINK_COST="1.1588951108758827" DIRECTIONAL_CHANGE_RATE="2.0438120737957135" SPEED="1.0765199073291134" DISPLACEMENT="1.0765199073291134" EDGE_TIME="43.5" EDGE_X_LOCATION="49.45427180205152" EDGE_Y_LOCATION="66.57770986678354" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4047" SPOT_TARGET_ID="4017" LINK_COST="0.43983637690015254" DIRECTIONAL_CHANGE_RATE="2.4328129895231907" SPEED="0.663201611050631" DISPLACEMENT="0.663201611050631" EDGE_TIME="118.5" EDGE_X_LOCATION="44.78156710646802" EDGE_Y_LOCATION="75.39307308233518" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3937" SPOT_TARGET_ID="3906" LINK_COST="1.1729086720001878" DIRECTIONAL_CHANGE_RATE="0.47999134065776144" SPEED="1.083009082141137" DISPLACEMENT="1.083009082141137" EDGE_TIME="90.5" EDGE_X_LOCATION="53.71162652276102" EDGE_Y_LOCATION="74.20024255204359" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3746" SPOT_TARGET_ID="3737" LINK_COST="0.9255087005727487" DIRECTIONAL_CHANGE_RATE="1.9315503824106468" SPEED="0.9620336275685735" DISPLACEMENT="0.9620336275685735" EDGE_TIME="42.5" EDGE_X_LOCATION="49.21035562188355" EDGE_Y_LOCATION="66.10263181620007" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3592" SPOT_TARGET_ID="3605" LINK_COST="0.4279835794768437" DIRECTIONAL_CHANGE_RATE="1.05571012766928" SPEED="0.6542045394804622" DISPLACEMENT="0.6542045394804622" EDGE_TIME="6.5" EDGE_X_LOCATION="59.12399964298757" EDGE_Y_LOCATION="62.659855116155185" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4033" SPOT_TARGET_ID="3980" LINK_COST="0.4593102307997517" DIRECTIONAL_CHANGE_RATE="0.4383076390474013" SPEED="0.6777243029431301" DISPLACEMENT="0.6777243029431301" EDGE_TIME="108.5" EDGE_X_LOCATION="40.976813698861704" EDGE_Y_LOCATION="76.22338864429686" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4029" SPOT_TARGET_ID="4052" LINK_COST="2.02802014217169" DIRECTIONAL_CHANGE_RATE="0.8149509558452733" SPEED="1.4240857214970208" DISPLACEMENT="1.4240857214970208" EDGE_TIME="122.5" EDGE_X_LOCATION="41.4466574128497" EDGE_Y_LOCATION="76.72865360294307" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3599" SPOT_TARGET_ID="3588" LINK_COST="9.200102542214642" DIRECTIONAL_CHANGE_RATE="0.41377488006928637" SPEED="3.0331670811570275" DISPLACEMENT="3.0331670811570275" EDGE_TIME="13.5" EDGE_X_LOCATION="61.32020218588032" EDGE_Y_LOCATION="62.37270183847894" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3698" SPOT_TARGET_ID="3717" LINK_COST="3.463078561020719" DIRECTIONAL_CHANGE_RATE="2.516239859108679" SPEED="1.8609348621111699" DISPLACEMENT="1.8609348621111699" EDGE_TIME="26.5" EDGE_X_LOCATION="57.28273737599453" EDGE_Y_LOCATION="55.28404392593065" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3842" SPOT_TARGET_ID="3823" LINK_COST="4.999708514635287" DIRECTIONAL_CHANGE_RATE="2.861953264691504" SPEED="2.2360027984408446" DISPLACEMENT="2.2360027984408446" EDGE_TIME="65.5" EDGE_X_LOCATION="47.696425813170265" EDGE_Y_LOCATION="76.24249291053422" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4106" SPOT_TARGET_ID="4073" LINK_COST="0.16066199547476662" DIRECTIONAL_CHANGE_RATE="1.7090784996738964" SPEED="0.4008266401759826" DISPLACEMENT="0.4008266401759826" EDGE_TIME="132.5" EDGE_X_LOCATION="43.787612670405565" EDGE_Y_LOCATION="83.3826684715037" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4009" SPOT_TARGET_ID="4015" LINK_COST="20.976280894615336" DIRECTIONAL_CHANGE_RATE="0.9884341651928886" SPEED="4.579986997210291" DISPLACEMENT="4.579986997210291" EDGE_TIME="115.5" EDGE_X_LOCATION="39.785738700849095" EDGE_Y_LOCATION="75.11704933019266" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3984" SPOT_TARGET_ID="3994" LINK_COST="0.7075313529163958" DIRECTIONAL_CHANGE_RATE="1.4820616204242387" SPEED="0.8411488292308299" DISPLACEMENT="0.8411488292308299" EDGE_TIME="110.5" EDGE_X_LOCATION="39.81401960578906" EDGE_Y_LOCATION="76.13878906025047" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3857" SPOT_TARGET_ID="3840" LINK_COST="3.138833371400264" DIRECTIONAL_CHANGE_RATE="1.5068881285921254" SPEED="1.771675300781795" DISPLACEMENT="1.771675300781795" EDGE_TIME="69.5" EDGE_X_LOCATION="50.31345112956344" EDGE_Y_LOCATION="80.18419605266271" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3872" SPOT_TARGET_ID="3850" LINK_COST="9.746479842620337" DIRECTIONAL_CHANGE_RATE="0.06228209801835897" SPEED="3.1219352720100293" DISPLACEMENT="3.1219352720100293" EDGE_TIME="74.5" EDGE_X_LOCATION="45.30127739546555" EDGE_Y_LOCATION="81.45379050329291" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3649" SPOT_TARGET_ID="3612" LINK_COST="10.903142860885549" DIRECTIONAL_CHANGE_RATE="0.8321961289754572" SPEED="3.301990742095675" DISPLACEMENT="3.301990742095675" EDGE_TIME="8.5" EDGE_X_LOCATION="59.83993277266201" EDGE_Y_LOCATION="57.89796391893217" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3689" SPOT_TARGET_ID="3651" LINK_COST="0.505378405324085" DIRECTIONAL_CHANGE_RATE="2.1077689429776933" SPEED="0.710899715377693" DISPLACEMENT="0.710899715377693" EDGE_TIME="18.5" EDGE_X_LOCATION="57.03631903483944" EDGE_Y_LOCATION="64.46281769011904" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3885" SPOT_TARGET_ID="3880" LINK_COST="4.289771465018707" DIRECTIONAL_CHANGE_RATE="0.2751657221648004" SPEED="2.071176348121692" DISPLACEMENT="2.071176348121692" EDGE_TIME="82.5" EDGE_X_LOCATION="47.34630118152235" EDGE_Y_LOCATION="77.80520474980645" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3850" SPOT_TARGET_ID="3893" LINK_COST="9.248810355182915" DIRECTIONAL_CHANGE_RATE="1.0646005829365557" SPEED="3.041185682457241" DISPLACEMENT="3.041185682457241" EDGE_TIME="75.5" EDGE_X_LOCATION="43.257484446748336" EDGE_Y_LOCATION="83.14890883794354" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3884" SPOT_TARGET_ID="3857" LINK_COST="0.11941457927537148" DIRECTIONAL_CHANGE_RATE="2.408327677895769" SPEED="0.3455641463974113" DISPLACEMENT="0.3455641463974113" EDGE_TIME="68.5" EDGE_X_LOCATION="50.90527775048214" EDGE_Y_LOCATION="79.4886005514247" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4000" SPOT_TARGET_ID="3987" LINK_COST="0.001620320382145216" DIRECTIONAL_CHANGE_RATE="2.100647886279853" SPEED="0.04025320337743589" DISPLACEMENT="0.04025320337743589" EDGE_TIME="112.5" EDGE_X_LOCATION="39.509274394961935" EDGE_Y_LOCATION="72.5502267872619" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3777" SPOT_TARGET_ID="3782" LINK_COST="10.324082335628882" DIRECTIONAL_CHANGE_RATE="1.638894630512593" SPEED="3.21311100580557" DISPLACEMENT="3.21311100580557" EDGE_TIME="49.5" EDGE_X_LOCATION="48.84191163445611" EDGE_Y_LOCATION="75.24539412958703" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3865" SPOT_TARGET_ID="3874" LINK_COST="7.730060657200463" DIRECTIONAL_CHANGE_RATE="0.23876731772647458" SPEED="2.780298663309477" DISPLACEMENT="2.780298663309477" EDGE_TIME="79.5" EDGE_X_LOCATION="45.513127153407055" EDGE_Y_LOCATION="80.54153655616823" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3994" SPOT_TARGET_ID="4000" LINK_COST="10.543846531930338" DIRECTIONAL_CHANGE_RATE="0.5593437665288679" SPEED="3.247128967554313" DISPLACEMENT="3.247128967554313" EDGE_TIME="111.5" EDGE_X_LOCATION="39.555484468283055" EDGE_Y_LOCATION="74.163050786627" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3826" SPOT_TARGET_ID="3842" LINK_COST="0.8604299056022005" DIRECTIONAL_CHANGE_RATE="2.3721789323779894" SPEED="0.927593610155978" DISPLACEMENT="0.927593610155978" EDGE_TIME="64.5" EDGE_X_LOCATION="47.4927958521796" EDGE_Y_LOCATION="75.58919152499598" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3642" SPOT_TARGET_ID="3592" LINK_COST="2.1487503110062094" DIRECTIONAL_CHANGE_RATE="1.1422268835029867" SPEED="1.4658616275099807" DISPLACEMENT="1.4658616275099807" EDGE_TIME="5.5" EDGE_X_LOCATION="59.18824311951653" EDGE_Y_LOCATION="63.595940641212835" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3741" SPOT_TARGET_ID="3761" LINK_COST="1.6569844460427625" DIRECTIONAL_CHANGE_RATE="0.18958467768198317" SPEED="1.287239078820544" DISPLACEMENT="1.287239078820544" EDGE_TIME="40.5" EDGE_X_LOCATION="50.44597237484664" EDGE_Y_LOCATION="62.88477181358185" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3674" SPOT_TARGET_ID="3704" LINK_COST="6.4743898291840525" DIRECTIONAL_CHANGE_RATE="0.21879861467114872" SPEED="2.5444822320432996" DISPLACEMENT="2.5444822320432996" EDGE_TIME="28.5" EDGE_X_LOCATION="55.57031008177006" EDGE_Y_LOCATION="57.801968595686404" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3960" SPOT_TARGET_ID="3967" LINK_COST="0.2234333570475939" DIRECTIONAL_CHANGE_RATE="0.42942304980386814" SPEED="0.4726873777113092" DISPLACEMENT="0.4726873777113092" EDGE_TIME="102.5" EDGE_X_LOCATION="44.258889711385564" EDGE_Y_LOCATION="74.98216143780878" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4094" SPOT_TARGET_ID="4078" LINK_COST="0.8662583116288469" DIRECTIONAL_CHANGE_RATE="0.4985120588272731" SPEED="0.9307299885728658" DISPLACEMENT="0.9307299885728658" EDGE_TIME="135.5" EDGE_X_LOCATION="43.938796249144914" EDGE_Y_LOCATION="82.87092381597297" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3692" SPOT_TARGET_ID="3707" LINK_COST="3.372024312380798" DIRECTIONAL_CHANGE_RATE="0.4069041660232944" SPEED="1.8363072489049315" DISPLACEMENT="1.8363072489049315" EDGE_TIME="20.5" EDGE_X_LOCATION="57.96910782006172" EDGE_Y_LOCATION="63.27395969972138" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3830" SPOT_TARGET_ID="3780" LINK_COST="2.7309755658360366" DIRECTIONAL_CHANGE_RATE="3.0796705008798204" SPEED="1.6525663574682974" DISPLACEMENT="1.6525663574682974" EDGE_TIME="54.5" EDGE_X_LOCATION="49.519785488087386" EDGE_Y_LOCATION="74.54730767637827" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3916" SPOT_TARGET_ID="3935" LINK_COST="1.3465611044758323" DIRECTIONAL_CHANGE_RATE="1.818287172017681" SPEED="1.1604141952233402" DISPLACEMENT="1.1604141952233402" EDGE_TIME="87.5" EDGE_X_LOCATION="52.513474894560886" EDGE_Y_LOCATION="72.84300519761926" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3727" SPOT_TARGET_ID="3720" LINK_COST="3.362764573222756" DIRECTIONAL_CHANGE_RATE="1.7380393052593066" SPEED="1.83378422209996" DISPLACEMENT="1.83378422209996" EDGE_TIME="37.5" EDGE_X_LOCATION="55.67543531301779" EDGE_Y_LOCATION="60.589397752352355" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3893" SPOT_TARGET_ID="3853" LINK_COST="1.2071756594479848" DIRECTIONAL_CHANGE_RATE="0.1274903787091582" SPEED="1.0987154588190633" DISPLACEMENT="1.0987154588190633" EDGE_TIME="76.5" EDGE_X_LOCATION="42.50596164846325" EDGE_Y_LOCATION="85.07409704417759" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3880" SPOT_TARGET_ID="3878" LINK_COST="5.555461505710552" DIRECTIONAL_CHANGE_RATE="1.3251300429915487" SPEED="2.3570026528857686" DISPLACEMENT="2.3570026528857686" EDGE_TIME="83.5" EDGE_X_LOCATION="48.47273015286886" EDGE_Y_LOCATION="76.46875590716749" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4021" SPOT_TARGET_ID="4035" LINK_COST="3.331113085838333" DIRECTIONAL_CHANGE_RATE="1.1348717070803098" SPEED="1.8251337172487754" DISPLACEMENT="1.8251337172487754" EDGE_TIME="120.5" EDGE_X_LOCATION="43.15172125543337" EDGE_Y_LOCATION="76.39335845352286" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3636" SPOT_TARGET_ID="3599" LINK_COST="7.932087292468638" DIRECTIONAL_CHANGE_RATE="0.1946357681372404" SPEED="2.8163961533258486" DISPLACEMENT="2.8163961533258486" EDGE_TIME="12.5" EDGE_X_LOCATION="62.245991672455865" EDGE_Y_LOCATION="59.66404819301414" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3906" SPOT_TARGET_ID="3911" LINK_COST="4.754229088340532" DIRECTIONAL_CHANGE_RATE="2.0082521980141226" SPEED="2.1804194753167407" DISPLACEMENT="2.1804194753167407" EDGE_TIME="91.5" EDGE_X_LOCATION="53.86779274230618" EDGE_Y_LOCATION="75.17861170810826" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4061" SPOT_TARGET_ID="4064" LINK_COST="16.676064488571917" DIRECTIONAL_CHANGE_RATE="2.200685219043306" SPEED="4.083633735849962" DISPLACEMENT="4.083633735849962" EDGE_TIME="129.5" EDGE_X_LOCATION="41.75991795641778" EDGE_Y_LOCATION="82.20806406758794" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3792" SPOT_TARGET_ID="3809" LINK_COST="8.766971693059249" DIRECTIONAL_CHANGE_RATE="0.23847225878522857" SPEED="2.960907241549328" DISPLACEMENT="2.960907241549328" EDGE_TIME="52.5" EDGE_X_LOCATION="49.407992778837624" EDGE_Y_LOCATION="75.25481496661828" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3761" SPOT_TARGET_ID="3746" LINK_COST="10.556635862957812" DIRECTIONAL_CHANGE_RATE="0.9645502735056581" SPEED="3.2490976998172605" DISPLACEMENT="3.2490976998172605" EDGE_TIME="41.5" EDGE_X_LOCATION="49.27690462855999" EDGE_Y_LOCATION="64.58130163166373" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3615" SPOT_TARGET_ID="3607" LINK_COST="1.7101524401984443" DIRECTIONAL_CHANGE_RATE="2.3265110431135447" SPEED="1.3077279687299053" DISPLACEMENT="1.3077279687299053" EDGE_TIME="1.5" EDGE_X_LOCATION="66.20821536666051" EDGE_Y_LOCATION="59.306602896836665" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3623" SPOT_TARGET_ID="3615" LINK_COST="9.290200181478905" DIRECTIONAL_CHANGE_RATE="NaN" SPEED="3.0479829693551284" DISPLACEMENT="3.0479829693551284" EDGE_TIME="0.5" EDGE_X_LOCATION="66.86637928869072" EDGE_Y_LOCATION="60.28134090648513" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3890" SPOT_TARGET_ID="3865" LINK_COST="2.9473038245703123" DIRECTIONAL_CHANGE_RATE="1.1927193900699202" SPEED="1.7167713372986841" DISPLACEMENT="1.7167713372986841" EDGE_TIME="78.5" EDGE_X_LOCATION="43.47798645238451" EDGE_Y_LOCATION="81.46153960988913" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3686" SPOT_TARGET_ID="3683" LINK_COST="8.582905892479376" DIRECTIONAL_CHANGE_RATE="1.3406711257171746" SPEED="2.929659688851143" DISPLACEMENT="2.929659688851143" EDGE_TIME="33.5" EDGE_X_LOCATION="56.47676581871766" EDGE_Y_LOCATION="61.445262167560614" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3966" SPOT_TARGET_ID="3973" LINK_COST="1.0586207774152987" DIRECTIONAL_CHANGE_RATE="1.9200011419851124" SPEED="1.0288929863767653" DISPLACEMENT="1.0288929863767653" EDGE_TIME="104.5" EDGE_X_LOCATION="44.27188976485701" EDGE_Y_LOCATION="75.98084230866667" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4092" SPOT_TARGET_ID="4102" LINK_COST="4.518917598574756" DIRECTIONAL_CHANGE_RATE="1.204612829788914" SPEED="2.125774587903138" DISPLACEMENT="2.125774587903138" EDGE_TIME="141.5" EDGE_X_LOCATION="46.38728275584284" EDGE_Y_LOCATION="90.37094736289838" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4015" SPOT_TARGET_ID="3997" LINK_COST="5.935785014110269" DIRECTIONAL_CHANGE_RATE="0.2279909061918231" SPEED="2.4363466531079414" DISPLACEMENT="2.4363466531079414" EDGE_TIME="116.5" EDGE_X_LOCATION="43.02665935442336" EDGE_Y_LOCATION="76.405184160679" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3586" SPOT_TARGET_ID="3631" LINK_COST="8.628501807268982" DIRECTIONAL_CHANGE_RATE="0.636669401859955" SPEED="2.9374311578774033" DISPLACEMENT="2.9374311578774033" EDGE_TIME="3.5" EDGE_X_LOCATION="63.6170495492692" EDGE_Y_LOCATION="63.59367838873778" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3902" SPOT_TARGET_ID="3937" LINK_COST="4.6357935263570935" DIRECTIONAL_CHANGE_RATE="2.0808937309857303" SPEED="2.153089298277499" DISPLACEMENT="2.153089298277499" EDGE_TIME="89.5" EDGE_X_LOCATION="52.18111722413761" EDGE_Y_LOCATION="73.8209331152782" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4128" SPOT_TARGET_ID="4133" LINK_COST="1.686761185371512" DIRECTIONAL_CHANGE_RATE="2.8239621729836526" SPEED="1.2987537046613233" DISPLACEMENT="1.2987537046613233" EDGE_TIME="148.5" EDGE_X_LOCATION="42.63150068350592" EDGE_Y_LOCATION="94.93228941983868" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3823" SPOT_TARGET_ID="3835" LINK_COST="10.564294765305032" DIRECTIONAL_CHANGE_RATE="0.4641196080915845" SPEED="3.2502761060108467" DISPLACEMENT="3.2502761060108467" EDGE_TIME="66.5" EDGE_X_LOCATION="49.549014930859585" EDGE_Y_LOCATION="78.16819494914351" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3973" SPOT_TARGET_ID="3983" LINK_COST="0.22902718863031235" DIRECTIONAL_CHANGE_RATE="0.19958412712280138" SPEED="0.4785678516473002" DISPLACEMENT="0.4785678516473002" EDGE_TIME="105.5" EDGE_X_LOCATION="43.521772716254944" EDGE_Y_LOCATION="76.00422431989804" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3725" SPOT_TARGET_ID="3727" LINK_COST="6.773934901457428" DIRECTIONAL_CHANGE_RATE="3.051462124697143" SPEED="2.6026784091503563" DISPLACEMENT="2.6026784091503563" EDGE_TIME="36.5" EDGE_X_LOCATION="55.85245028499102" EDGE_Y_LOCATION="62.0404642434292" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3838" SPOT_TARGET_ID="3804" LINK_COST="1.1050934639119885" DIRECTIONAL_CHANGE_RATE="0.4323273566977592" SPEED="1.051234257390801" DISPLACEMENT="1.051234257390801" EDGE_TIME="62.5" EDGE_X_LOCATION="47.666089980463795" EDGE_Y_LOCATION="75.92764894833638" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3624" SPOT_TARGET_ID="3689" LINK_COST="1.6397737154936702" DIRECTIONAL_CHANGE_RATE="1.412455409825104" SPEED="1.2805364951822615" DISPLACEMENT="1.2805364951822615" EDGE_TIME="17.5" EDGE_X_LOCATION="56.91716538442303" EDGE_Y_LOCATION="63.92499252122089" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3878" SPOT_TARGET_ID="3895" LINK_COST="0.9651120855293678" DIRECTIONAL_CHANGE_RATE="0.8280789592600755" SPEED="0.98240118359526" DISPLACEMENT="0.98240118359526" EDGE_TIME="84.5" EDGE_X_LOCATION="50.025739137557395" EDGE_Y_LOCATION="76.43282281272455" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3930" SPOT_TARGET_ID="3951" LINK_COST="2.7494404936651016" DIRECTIONAL_CHANGE_RATE="2.3006966170387924" SPEED="1.6581436890888261" DISPLACEMENT="1.6581436890888261" EDGE_TIME="96.5" EDGE_X_LOCATION="51.33766204622841" EDGE_Y_LOCATION="75.96064393949754" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3961" SPOT_TARGET_ID="3960" LINK_COST="9.980146054512616" DIRECTIONAL_CHANGE_RATE="1.6208768751729896" SPEED="3.1591369160757523" DISPLACEMENT="3.1591369160757523" EDGE_TIME="101.5" EDGE_X_LOCATION="45.172180856702525" EDGE_Y_LOCATION="76.52994878511446" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3997" SPOT_TARGET_ID="4047" LINK_COST="2.7027801645168092" DIRECTIONAL_CHANGE_RATE="1.5385060428915773" SPEED="1.6440134319757882" DISPLACEMENT="1.6440134319757882" EDGE_TIME="117.5" EDGE_X_LOCATION="44.425560525768" EDGE_Y_LOCATION="75.88810282673597" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4115" SPOT_TARGET_ID="4130" LINK_COST="3.6073238746205725" DIRECTIONAL_CHANGE_RATE="0.5034732278246529" SPEED="1.8992956259151899" DISPLACEMENT="1.8992956259151899" EDGE_TIME="146.5" EDGE_X_LOCATION="45.220679221670096" EDGE_Y_LOCATION="93.8404286246147" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3935" SPOT_TARGET_ID="3902" LINK_COST="0.8827308023005047" DIRECTIONAL_CHANGE_RATE="0.6902404728846646" SPEED="0.9395375470413647" DISPLACEMENT="0.9395375470413647" EDGE_TIME="88.5" EDGE_X_LOCATION="51.56201714536445" EDGE_Y_LOCATION="73.11206690281936" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3612" SPOT_TARGET_ID="3618" LINK_COST="5.148311417699814" DIRECTIONAL_CHANGE_RATE="1.1716356042873695" SPEED="2.268989073948972" DISPLACEMENT="2.268989073948972" EDGE_TIME="9.5" EDGE_X_LOCATION="61.96078773153407" EDGE_Y_LOCATION="56.912703642904475" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3732" SPOT_TARGET_ID="3750" LINK_COST="1.6987956202938028" DIRECTIONAL_CHANGE_RATE="3.114091549702091" SPEED="1.3033785406756562" DISPLACEMENT="1.3033785406756562" EDGE_TIME="45.5" EDGE_X_LOCATION="49.36473690112536" EDGE_Y_LOCATION="67.89491631233253" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4077" SPOT_TARGET_ID="4080" LINK_COST="2.0356335765215694" DIRECTIONAL_CHANGE_RATE="0.4618734836752377" SPEED="1.4267563129426024" DISPLACEMENT="1.4267563129426024" EDGE_TIME="137.5" EDGE_X_LOCATION="45.65724875636522" EDGE_Y_LOCATION="84.92436295110954" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4007" SPOT_TARGET_ID="4009" LINK_COST="0.6059506906233151" DIRECTIONAL_CHANGE_RATE="1.301660810108165" SPEED="0.7784283464926718" DISPLACEMENT="0.7784283464926718" EDGE_TIME="114.5" EDGE_X_LOCATION="37.682559744807286" EDGE_Y_LOCATION="73.71968724288874" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3920" SPOT_TARGET_ID="3927" LINK_COST="3.4111138636681506" DIRECTIONAL_CHANGE_RATE="2.5868382987168257" SPEED="1.8469201021344022" DISPLACEMENT="1.8469201021344022" EDGE_TIME="94.5" EDGE_X_LOCATION="52.909834583126695" EDGE_Y_LOCATION="73.27281124450036" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3668" SPOT_TARGET_ID="3698" LINK_COST="5.5161081123003965" DIRECTIONAL_CHANGE_RATE="1.7035030182134427" SPEED="2.3486396301477153" DISPLACEMENT="2.3486396301477153" EDGE_TIME="25.5" EDGE_X_LOCATION="57.897256296688866" EDGE_Y_LOCATION="54.97519095245495" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3750" SPOT_TARGET_ID="3772" LINK_COST="1.4331514901263074" DIRECTIONAL_CHANGE_RATE="2.776504573762517" SPEED="1.197143053325837" DISPLACEMENT="1.197143053325837" EDGE_TIME="46.5" EDGE_X_LOCATION="49.14106390308669" EDGE_Y_LOCATION="67.83002586312658" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3874" SPOT_TARGET_ID="3866" LINK_COST="3.415210735294709" DIRECTIONAL_CHANGE_RATE="1.290807307482483" SPEED="1.8480288783714147" DISPLACEMENT="1.8480288783714147" EDGE_TIME="80.5" EDGE_X_LOCATION="47.38255474905142" EDGE_Y_LOCATION="80.50282167578297" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3899" SPOT_TARGET_ID="3916" LINK_COST="6.36328192542543" DIRECTIONAL_CHANGE_RATE="0.6671468391196406" SPEED="2.5225546427035885" DISPLACEMENT="2.5225546427035885" EDGE_TIME="86.5" EDGE_X_LOCATION="52.7457715043097" EDGE_Y_LOCATION="74.07384108049959" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3763" SPOT_TARGET_ID="3732" LINK_COST="2.244432093897616" DIRECTIONAL_CHANGE_RATE="0.6098992058650248" SPEED="1.4981428816697078" DISPLACEMENT="1.4981428816697078" EDGE_TIME="44.5" EDGE_X_LOCATION="49.3320635850082" EDGE_Y_LOCATION="67.8011884067142" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3895" SPOT_TARGET_ID="3899" LINK_COST="5.829541235472023" DIRECTIONAL_CHANGE_RATE="1.194285884476702" SPEED="2.4144442912339112" DISPLACEMENT="2.4144442912339112" EDGE_TIME="85.5" EDGE_X_LOCATION="51.41873595928213" EDGE_Y_LOCATION="75.9920505905186" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3971" SPOT_TARGET_ID="4033" LINK_COST="0.9488788324059662" DIRECTIONAL_CHANGE_RATE="0.27493953623034606" SPEED="0.9741041178467352" DISPLACEMENT="0.9741041178467352" EDGE_TIME="107.5" EDGE_X_LOCATION="41.77866421817714" EDGE_Y_LOCATION="76.13412890273358" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3840" SPOT_TARGET_ID="3862" LINK_COST="10.10561879223076" DIRECTIONAL_CHANGE_RATE="1.099406425764321" SPEED="3.1789335935547256" DISPLACEMENT="3.1789335935547256" EDGE_TIME="70.5" EDGE_X_LOCATION="48.289167711876004" EDGE_Y_LOCATION="80.88577602260494" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3753" SPOT_TARGET_ID="3777" LINK_COST="16.988617276229924" DIRECTIONAL_CHANGE_RATE="0.34977331062505523" SPEED="4.121725036465912" DISPLACEMENT="4.121725036465912" EDGE_TIME="48.5" EDGE_X_LOCATION="48.106150579475134" EDGE_Y_LOCATION="72.82956155516158" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4064" SPOT_TARGET_ID="4086" LINK_COST="0.5329567885065967" DIRECTIONAL_CHANGE_RATE="0.1914578151452731" SPEED="0.7300388952012055" DISPLACEMENT="0.7300388952012055" EDGE_TIME="130.5" EDGE_X_LOCATION="43.58279970688776" EDGE_Y_LOCATION="83.77098653284283" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4073" SPOT_TARGET_ID="4099" LINK_COST="6.570970769229844" DIRECTIONAL_CHANGE_RATE="0.5708300413174179" SPEED="2.5633904831745484" DISPLACEMENT="2.5633904831745484" EDGE_TIME="133.5" EDGE_X_LOCATION="45.23368431798391" EDGE_Y_LOCATION="83.53781648073507" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4040" SPOT_TARGET_ID="4058" LINK_COST="3.389236070958437" DIRECTIONAL_CHANGE_RATE="0.7334524701418056" SPEED="1.8409877976125852" DISPLACEMENT="1.8409877976125852" EDGE_TIME="124.5" EDGE_X_LOCATION="41.31896030180563" EDGE_Y_LOCATION="78.38444058415133" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4109" SPOT_TARGET_ID="4092" LINK_COST="6.589067506067248" DIRECTIONAL_CHANGE_RATE="2.974494688958309" SPEED="2.566917900141578" DISPLACEMENT="2.566917900141578" EDGE_TIME="140.5" EDGE_X_LOCATION="48.1739743757506" EDGE_Y_LOCATION="91.12036416196469" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3835" SPOT_TARGET_ID="3884" LINK_COST="0.24268552587014572" DIRECTIONAL_CHANGE_RATE="0.5680400320583734" SPEED="0.4926312270554372" DISPLACEMENT="0.4926312270554372" EDGE_TIME="67.5" EDGE_X_LOCATION="50.967946886354696" EDGE_Y_LOCATION="79.33577505433092" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3657" SPOT_TARGET_ID="3678" LINK_COST="24.003850675645026" DIRECTIONAL_CHANGE_RATE="0.13303255137847883" SPEED="4.8993724777409025" DISPLACEMENT="4.8993724777409025" EDGE_TIME="22.5" EDGE_X_LOCATION="60.042087725255655" EDGE_Y_LOCATION="56.639797910090635" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3678" SPOT_TARGET_ID="3662" LINK_COST="0.7862225744070517" DIRECTIONAL_CHANGE_RATE="2.072067863521595" SPEED="0.8866919275639379" DISPLACEMENT="0.8866919275639379" EDGE_TIME="23.5" EDGE_X_LOCATION="60.49613634150437" EDGE_Y_LOCATION="54.415485247354695" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3772" SPOT_TARGET_ID="3753" LINK_COST="6.328302081938964" DIRECTIONAL_CHANGE_RATE="0.19649858734492773" SPEED="2.5156116715301993" DISPLACEMENT="2.5156116715301993" EDGE_TIME="47.5" EDGE_X_LOCATION="48.94648055941781" EDGE_Y_LOCATION="69.6683124070546" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3768" SPOT_TARGET_ID="3792" LINK_COST="0.5197097636128584" DIRECTIONAL_CHANGE_RATE="2.5959479062279436" SPEED="0.7209089842780837" DISPLACEMENT="0.7209089842780837" EDGE_TIME="51.5" EDGE_X_LOCATION="51.23998906586125" EDGE_Y_LOCATION="75.20453110718577" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3789" SPOT_TARGET_ID="3799" LINK_COST="3.519926369900166" DIRECTIONAL_CHANGE_RATE="2.141482451921612" SPEED="1.8761466813392194" DISPLACEMENT="1.8761466813392194" EDGE_TIME="58.5" EDGE_X_LOCATION="49.62171678749121" EDGE_Y_LOCATION="76.20201963456945" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3809" SPOT_TARGET_ID="3830" LINK_COST="6.811667386514699" DIRECTIONAL_CHANGE_RATE="2.7118407307851746" SPEED="2.609917122537553" DISPLACEMENT="2.609917122537553" EDGE_TIME="53.5" EDGE_X_LOCATION="49.074487454813294" EDGE_Y_LOCATION="74.73431813681384" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3780" SPOT_TARGET_ID="3817" LINK_COST="1.3716902487702853" DIRECTIONAL_CHANGE_RATE="2.1894042819086934" SPEED="1.171191806994177" DISPLACEMENT="1.171191806994177" EDGE_TIME="55.5" EDGE_X_LOCATION="49.364555190300806" EDGE_Y_LOCATION="75.21091769783496" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3866" SPOT_TARGET_ID="3885" LINK_COST="5.797397854912863" DIRECTIONAL_CHANGE_RATE="2.6337357157035983" SPEED="2.4077786141821393" DISPLACEMENT="2.4077786141821393" EDGE_TIME="81.5" EDGE_X_LOCATION="47.70092475072544" EDGE_Y_LOCATION="79.99511290735032" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4088" SPOT_TARGET_ID="4109" LINK_COST="9.238308304004784" DIRECTIONAL_CHANGE_RATE="0.08158338822879282" SPEED="3.0394585544147144" DISPLACEMENT="3.0394585544147144" EDGE_TIME="139.5" EDGE_X_LOCATION="48.24958953504559" EDGE_Y_LOCATION="90.79719079004978" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4130" SPOT_TARGET_ID="4128" LINK_COST="7.204605301209897" DIRECTIONAL_CHANGE_RATE="0.921923772485759" SPEED="2.6841395830339927" DISPLACEMENT="2.6841395830339927" EDGE_TIME="147.5" EDGE_X_LOCATION="43.345486213800626" EDGE_Y_LOCATION="94.69304643413571" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3815" SPOT_TARGET_ID="3794" LINK_COST="0.9220721002476326" DIRECTIONAL_CHANGE_RATE="2.908333924636282" SPEED="0.960245854064277" DISPLACEMENT="0.960245854064277" EDGE_TIME="60.5" EDGE_X_LOCATION="49.2496004417366" EDGE_Y_LOCATION="77.02761527443565" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3848" SPOT_TARGET_ID="3843" LINK_COST="2.773009978704921" DIRECTIONAL_CHANGE_RATE="0.2568372048727612" SPEED="1.6652357126559956" DISPLACEMENT="1.6652357126559956" EDGE_TIME="72.5" EDGE_X_LOCATION="49.45584574806321" EDGE_Y_LOCATION="80.36877283335538" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3927" SPOT_TARGET_ID="3930" LINK_COST="8.232330953782867" DIRECTIONAL_CHANGE_RATE="1.057141674331336" SPEED="2.8692038884998863" DISPLACEMENT="2.8692038884998863" EDGE_TIME="95.5" EDGE_X_LOCATION="52.00302557244903" EDGE_Y_LOCATION="75.11413498867108" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3685" SPOT_TARGET_ID="3686" LINK_COST="16.796268973687532" DIRECTIONAL_CHANGE_RATE="1.6488638906115" SPEED="4.098325142504867" DISPLACEMENT="4.098325142504867" EDGE_TIME="32.5" EDGE_X_LOCATION="53.85694103897751" EDGE_Y_LOCATION="62.367581144705795" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3655" SPOT_TARGET_ID="3596" LINK_COST="0.04445502604020733" DIRECTIONAL_CHANGE_RATE="3.1369093923287203" SPEED="0.21084360564220897" DISPLACEMENT="0.21084360564220897" EDGE_TIME="15.5" EDGE_X_LOCATION="60.58468699092967" EDGE_Y_LOCATION="64.13113053965671" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3651" SPOT_TARGET_ID="3692" LINK_COST="0.14037934302524016" DIRECTIONAL_CHANGE_RATE="0.6375876399093674" SPEED="0.374672314196339" DISPLACEMENT="0.374672314196339" EDGE_TIME="19.5" EDGE_X_LOCATION="57.516665322425695" EDGE_Y_LOCATION="64.26860307757771" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3720" SPOT_TARGET_ID="3755" LINK_COST="7.5535620518248265" DIRECTIONAL_CHANGE_RATE="1.0422775981367567" SPEED="2.7483744380678603" DISPLACEMENT="2.7483744380678603" EDGE_TIME="38.5" EDGE_X_LOCATION="53.74120393191049" EDGE_Y_LOCATION="61.09785996002644" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4067" SPOT_TARGET_ID="4061" LINK_COST="3.789428594270543" DIRECTIONAL_CHANGE_RATE="0.8960793586250133" SPEED="1.9466454721573065" DISPLACEMENT="1.9466454721573065" EDGE_TIME="128.5" EDGE_X_LOCATION="41.20223495741374" EDGE_Y_LOCATION="80.63833481626574" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4102" SPOT_TARGET_ID="4105" LINK_COST="3.7090480412415974" DIRECTIONAL_CHANGE_RATE="1.8937267174860046" SPEED="1.925888896390858" DISPLACEMENT="1.925888896390858" EDGE_TIME="142.5" EDGE_X_LOCATION="45.90065856774246" EDGE_Y_LOCATION="91.4528800938984" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3605" SPOT_TARGET_ID="3649" LINK_COST="10.60972569245648" DIRECTIONAL_CHANGE_RATE="0.8386406252299408" SPEED="3.257257388119103" DISPLACEMENT="3.257257388119103" EDGE_TIME="7.5" EDGE_X_LOCATION="59.07043232684045" EDGE_Y_LOCATION="60.79738681494652" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3817" SPOT_TARGET_ID="3796" LINK_COST="0.14722923937785928" DIRECTIONAL_CHANGE_RATE="0.19605603229446766" SPEED="0.38370462517131493" DISPLACEMENT="0.38370462517131493" EDGE_TIME="56.5" EDGE_X_LOCATION="50.067130361806576" EDGE_Y_LOCATION="75.53727524093495" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3951" SPOT_TARGET_ID="3953" LINK_COST="12.473159444752872" DIRECTIONAL_CHANGE_RATE="0.9462090525910197" SPEED="3.5317360383744525" DISPLACEMENT="3.5317360383744525" EDGE_TIME="97.5" EDGE_X_LOCATION="49.00817241024562" EDGE_Y_LOCATION="75.65840320633934" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3618" SPOT_TARGET_ID="3633" LINK_COST="2.242444645732914" DIRECTIONAL_CHANGE_RATE="1.25822561784162" SPEED="1.49747943082131" DISPLACEMENT="1.49747943082131" EDGE_TIME="10.5" EDGE_X_LOCATION="63.467186006927136" EDGE_Y_LOCATION="56.59510422699539" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4099" SPOT_TARGET_ID="4094" LINK_COST="5.248208361201376" DIRECTIONAL_CHANGE_RATE="2.9028080688635107" SPEED="2.2908968464776795" DISPLACEMENT="2.2908968464776795" EDGE_TIME="134.5" EDGE_X_LOCATION="45.44854130044893" EDGE_Y_LOCATION="83.30178295781342" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4080" SPOT_TARGET_ID="4088" LINK_COST="17.567139253878842" DIRECTIONAL_CHANGE_RATE="0.08286540222552241" SPEED="4.1913171263791105" DISPLACEMENT="4.1913171263791105" EDGE_TIME="138.5" EDGE_X_LOCATION="46.771673276716186" EDGE_Y_LOCATION="87.50088880875168" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3983" SPOT_TARGET_ID="3971" LINK_COST="1.0786088045501006" DIRECTIONAL_CHANGE_RATE="0.12029972343164681" SPEED="1.0385609296281564" DISPLACEMENT="1.0385609296281564" EDGE_TIME="106.5" EDGE_X_LOCATION="42.76458981464257" EDGE_Y_LOCATION="75.98696373418333" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3799" SPOT_TARGET_ID="3815" LINK_COST="0.18270573583359193" DIRECTIONAL_CHANGE_RATE="0.0031230228243145763" SPEED="0.42744091502053466" DISPLACEMENT="0.42744091502053466" EDGE_TIME="59.5" EDGE_X_LOCATION="49.02260524795753" EDGE_Y_LOCATION="77.18573319111711" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3987" SPOT_TARGET_ID="4007" LINK_COST="4.0496278587589645" DIRECTIONAL_CHANGE_RATE="0.15357832123720694" SPEED="2.0123687183910817" DISPLACEMENT="2.0123687183910817" EDGE_TIME="113.5" EDGE_X_LOCATION="38.563059935500746" EDGE_Y_LOCATION="72.94710923252522" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3953" SPOT_TARGET_ID="3946" LINK_COST="0.5604568465595945" DIRECTIONAL_CHANGE_RATE="2.2283399098752112" SPEED="0.7486366585731655" DISPLACEMENT="0.7486366585731655" EDGE_TIME="98.5" EDGE_X_LOCATION="47.538638666198835" EDGE_Y_LOCATION="76.19776020514176" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3704" SPOT_TARGET_ID="3665" LINK_COST="1.6604644455667354" DIRECTIONAL_CHANGE_RATE="0.6227222981023983" SPEED="1.2885900999025002" DISPLACEMENT="1.2885900999025002" EDGE_TIME="29.5" EDGE_X_LOCATION="55.523004473310166" EDGE_Y_LOCATION="59.63585731612352" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3631" SPOT_TARGET_ID="3642" LINK_COST="8.73877909886388" DIRECTIONAL_CHANGE_RATE="0.6580575594775244" SPEED="2.9561426046224293" DISPLACEMENT="2.9561426046224293" EDGE_TIME="4.5" EDGE_X_LOCATION="60.93398639897198" EDGE_Y_LOCATION="64.35400183450884" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3715" SPOT_TARGET_ID="3685" LINK_COST="5.976222408685411" DIRECTIONAL_CHANGE_RATE="1.4815269726937559" SPEED="2.444631344126433" DISPLACEMENT="2.444631344126433" EDGE_TIME="31.5" EDGE_X_LOCATION="52.18534444335937" EDGE_Y_LOCATION="60.78384838429025" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3683" SPOT_TARGET_ID="3702" LINK_COST="0.39779538268745634" DIRECTIONAL_CHANGE_RATE="2.911346721189123" SPEED="0.6307102208522202" DISPLACEMENT="0.6307102208522202" EDGE_TIME="34.5" EDGE_X_LOCATION="57.02573542583331" EDGE_Y_LOCATION="60.423349482817756" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3665" SPOT_TARGET_ID="3715" LINK_COST="10.928244104368162" DIRECTIONAL_CHANGE_RATE="2.150979499150118" SPEED="3.305789482766282" DISPLACEMENT="3.305789482766282" EDGE_TIME="30.5" EDGE_X_LOCATION="54.14504426006629" EDGE_Y_LOCATION="59.92017791904183" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3853" SPOT_TARGET_ID="3890" LINK_COST="15.121961092681062" DIRECTIONAL_CHANGE_RATE="2.7769915071690003" SPEED="3.8886965801770987" DISPLACEMENT="3.8886965801770987" EDGE_TIME="77.5" EDGE_X_LOCATION="42.45573803791108" EDGE_Y_LOCATION="83.63052414217519" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4052" SPOT_TARGET_ID="4040" LINK_COST="1.9963373915599563" DIRECTIONAL_CHANGE_RATE="2.2313846087144262" SPEED="1.4129180413456246" DISPLACEMENT="1.4129180413456246" EDGE_TIME="123.5" EDGE_X_LOCATION="40.858321678905796" EDGE_Y_LOCATION="76.93517663240067" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3862" SPOT_TARGET_ID="3848" LINK_COST="3.9102552104404533" DIRECTIONAL_CHANGE_RATE="2.860988701606975" SPEED="1.977436525009198" DISPLACEMENT="1.977436525009198" EDGE_TIME="71.5" EDGE_X_LOCATION="47.66230331314662" EDGE_Y_LOCATION="80.58432877107123" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3662" SPOT_TARGET_ID="3668" LINK_COST="4.17077316192728" DIRECTIONAL_CHANGE_RATE="0.45157495123899455" SPEED="2.0422470864044047" DISPLACEMENT="2.0422470864044047" EDGE_TIME="24.5" EDGE_X_LOCATION="59.088340190703136" EDGE_Y_LOCATION="54.14711557522679" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3596" SPOT_TARGET_ID="3624" LINK_COST="13.043562276472286" DIRECTIONAL_CHANGE_RATE="2.4830183943270114" SPEED="3.611587223987853" DISPLACEMENT="3.611587223987853" EDGE_TIME="16.5" EDGE_X_LOCATION="58.914119110648954" EDGE_Y_LOCATION="63.70675677073554" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3782" SPOT_TARGET_ID="3768" LINK_COST="1.7575869683989875" DIRECTIONAL_CHANGE_RATE="0.7049615541651869" SPEED="1.325740158703427" DISPLACEMENT="1.325740158703427" EDGE_TIME="50.5" EDGE_X_LOCATION="50.980258552715156" EDGE_Y_LOCATION="75.51012108737112" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4122" SPOT_TARGET_ID="4115" LINK_COST="8.293741832631902" DIRECTIONAL_CHANGE_RATE="3.1068238683578286" SPEED="2.879885732565079" DISPLACEMENT="2.879885732565079" EDGE_TIME="145.5" EDGE_X_LOCATION="47.03993533351564" EDGE_Y_LOCATION="92.40478044498326" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3702" SPOT_TARGET_ID="3725" LINK_COST="9.047521189303046" DIRECTIONAL_CHANGE_RATE="0.43490459510908885" SPEED="3.0079097708048104" DISPLACEMENT="3.0079097708048104" EDGE_TIME="35.5" EDGE_X_LOCATION="56.0701227459202" EDGE_Y_LOCATION="61.94268883696672" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3633" SPOT_TARGET_ID="3636" LINK_COST="7.011103092081864" DIRECTIONAL_CHANGE_RATE="2.905052220502918" SPEED="2.6478487668448634" DISPLACEMENT="2.6478487668448634" EDGE_TIME="11.5" EDGE_X_LOCATION="63.42801978640708" EDGE_Y_LOCATION="57.215191701045384" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3804" SPOT_TARGET_ID="3826" LINK_COST="0.45539978142405785" DIRECTIONAL_CHANGE_RATE="3.1222287855385655" SPEED="0.6748331508040027" DISPLACEMENT="0.6748331508040027" EDGE_TIME="63.5" EDGE_X_LOCATION="47.478400438670675" EDGE_Y_LOCATION="75.91156846778065" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3940" SPOT_TARGET_ID="3961" LINK_COST="5.07764945444468" DIRECTIONAL_CHANGE_RATE="1.6907542705842997" SPEED="2.2533640306094975" DISPLACEMENT="2.2533640306094975" EDGE_TIME="100.5" EDGE_X_LOCATION="46.953272061713875" EDGE_Y_LOCATION="77.17336440709293" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3967" SPOT_TARGET_ID="3966" LINK_COST="1.7171675324955475" DIRECTIONAL_CHANGE_RATE="2.856409301735353" SPEED="1.3104073918043762" DISPLACEMENT="1.3104073918043762" EDGE_TIME="103.5" EDGE_X_LOCATION="44.50282257073769" EDGE_Y_LOCATION="75.34055993847461" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4086" SPOT_TARGET_ID="4106" LINK_COST="0.3374091267990344" DIRECTIONAL_CHANGE_RATE="2.644744111508968" SPEED="0.5808692854670785" DISPLACEMENT="0.5808692854670785" EDGE_TIME="131.5" EDGE_X_LOCATION="43.74845348407759" EDGE_Y_LOCATION="83.70968165309912" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3911" SPOT_TARGET_ID="3925" LINK_COST="4.039388964036856" DIRECTIONAL_CHANGE_RATE="2.4595288406651705" SPEED="2.0098231175993715" DISPLACEMENT="2.0098231175993715" EDGE_TIME="92.5" EDGE_X_LOCATION="53.165683595605444" EDGE_Y_LOCATION="75.24593489286792" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4070" SPOT_TARGET_ID="4067" LINK_COST="10.193577846636574" DIRECTIONAL_CHANGE_RATE="1.122394806199523" SPEED="3.19273829911513" DISPLACEMENT="3.19273829911513" EDGE_TIME="127.5" EDGE_X_LOCATION="42.880653487498805" EDGE_Y_LOCATION="79.01972893521942" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3607" SPOT_TARGET_ID="3586" LINK_COST="9.54466718510814" DIRECTIONAL_CHANGE_RATE="0.30985180749301355" SPEED="3.089444478398688" DISPLACEMENT="3.089444478398688" EDGE_TIME="2.5" EDGE_X_LOCATION="65.3214742073236" EDGE_Y_LOCATION="61.29438381180168" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="3588" SPOT_TARGET_ID="3655" LINK_COST="0.49164019827324046" DIRECTIONAL_CHANGE_RATE="0.9980010574670827" SPEED="0.7011705914206902" DISPLACEMENT="0.7011705914206902" EDGE_TIME="14.5" EDGE_X_LOCATION="60.80644317350262" EDGE_Y_LOCATION="64.02658320893255" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4058" SPOT_TARGET_ID="4053" LINK_COST="8.602468940913482" DIRECTIONAL_CHANGE_RATE="2.2556058244046975" SPEED="2.9329965804469467" DISPLACEMENT="2.9329965804469467" EDGE_TIME="125.5" EDGE_X_LOCATION="42.23662616046424" EDGE_Y_LOCATION="77.71502299756727" EDGE_Z_LOCATION="0.0" />
+        <Edge SPOT_SOURCE_ID="4105" SPOT_TARGET_ID="4097" LINK_COST="0.11814547480210669" DIRECTIONAL_CHANGE_RATE="0.2598046542422395" SPEED="0.3437229622851908" DISPLACEMENT="0.3437229622851908" EDGE_TIME="143.5" EDGE_X_LOCATION="46.494649724477924" EDGE_Y_LOCATION="92.41405186220783" EDGE_Z_LOCATION="0.0" />
+      </Track>
+    </AllTracks>
+    <FilteredTracks>
+      <TrackID TRACK_ID="0" />
+    </FilteredTracks>
+  </Model>
+  <Settings>
+    <ImageData filename="Free(D=1,N=150)2D.tif" folder="C:\Users\ZachyHeath\ASU Dropbox\Zachary Hendrix\Diffusion\BayesDiffusion\" width="128" height="128" nslices="1" nframes="150" pixelwidth="1.0" pixelheight="1.0" voxeldepth="1.0" timeinterval="1.0" />
+    <BasicSettings xstart="0" xend="127" ystart="0" yend="127" zstart="0" zend="0" tstart="0" tend="149" />
+    <DetectorSettings DETECTOR_NAME="LOG_DETECTOR" TARGET_CHANNEL="1" RADIUS="5.0" THRESHOLD="0.19714273469038057" DO_MEDIAN_FILTERING="false" DO_SUBPIXEL_LOCALIZATION="true" />
+    <InitialSpotFilter feature="QUALITY" value="0.3682359717630442" isabove="true" />
+    <SpotFilterCollection />
+    <TrackerSettings TRACKER_NAME="SIMPLE_SPARSE_LAP_TRACKER" CUTOFF_PERCENTILE="0.9" ALTERNATIVE_LINKING_COST_FACTOR="1.05" BLOCKING_VALUE="Infinity">
+      <Linking LINKING_MAX_DISTANCE="15.0">
+        <FeaturePenalties />
+      </Linking>
+      <GapClosing ALLOW_GAP_CLOSING="true" GAP_CLOSING_MAX_DISTANCE="15.0" MAX_FRAME_GAP="2">
+        <FeaturePenalties />
+      </GapClosing>
+      <TrackSplitting ALLOW_TRACK_SPLITTING="false" SPLITTING_MAX_DISTANCE="15.0">
+        <FeaturePenalties />
+      </TrackSplitting>
+      <TrackMerging ALLOW_TRACK_MERGING="false" MERGING_MAX_DISTANCE="15.0">
+        <FeaturePenalties />
+      </TrackMerging>
+    </TrackerSettings>
+    <TrackFilterCollection />
+    <AnalyzerCollection>
+      <SpotAnalyzers>
+        <Analyzer key="Manual spot color" />
+        <Analyzer key="Spot intensity" />
+        <Analyzer key="Spot contrast and SNR" />
+      </SpotAnalyzers>
+      <EdgeAnalyzers>
+        <Analyzer key="Directional change" />
+        <Analyzer key="Edge speed" />
+        <Analyzer key="Edge target" />
+        <Analyzer key="Edge location" />
+        <Analyzer key="Manual edge color" />
+      </EdgeAnalyzers>
+      <TrackAnalyzers>
+        <Analyzer key="Branching analyzer" />
+        <Analyzer key="Track duration" />
+        <Analyzer key="Track index" />
+        <Analyzer key="Track location" />
+        <Analyzer key="Track speed" />
+        <Analyzer key="Track quality" />
+        <Analyzer key="Track motility analysis" />
+      </TrackAnalyzers>
+    </AnalyzerCollection>
+  </Settings>
+  <GUIState state="Actions" />
+  <DisplaySettings>{
+  "name": "CurrentDisplaySettings",
+  "spotUniformColor": "204, 51, 204, 255",
+  "spotColorByType": "DEFAULT",
+  "spotColorByFeature": "UNIFORM_COLOR",
+  "spotDisplayRadius": 1.0,
+  "spotDisplayedAsRoi": true,
+  "spotMin": 0.0,
+  "spotMax": 10.0,
+  "spotShowName": false,
+  "trackMin": 0.0,
+  "trackMax": 10.0,
+  "trackColorByType": "TRACKS",
+  "trackColorByFeature": "TRACK_INDEX",
+  "trackUniformColor": "204, 204, 51, 255",
+  "undefinedValueColor": "0, 0, 0, 255",
+  "missingValueColor": "89, 89, 89, 255",
+  "highlightColor": "51, 230, 51, 255",
+  "trackDisplayMode": "FULL",
+  "colormap": "Jet",
+  "limitZDrawingDepth": false,
+  "drawingZDepth": 10.0,
+  "fadeTracks": true,
+  "fadeTrackRange": 30,
+  "useAntialiasing": true,
+  "spotVisible": true,
+  "trackVisible": true,
+  "font": {
+    "name": "Arial",
+    "style": 1,
+    "size": 12,
+    "pointSize": 12.0,
+    "fontSerializedDataVersion": 1
+  },
+  "lineThickness": 1.0,
+  "selectionLineThickness": 4.0,
+  "trackschemeBackgroundColor1": "128, 128, 128, 255",
+  "trackschemeBackgroundColor2": "192, 192, 192, 255",
+  "trackschemeForegroundColor": "0, 0, 0, 255",
+  "trackschemeDecorationColor": "0, 0, 0, 255",
+  "trackschemeFillBox": false,
+  "spotFilled": false,
+  "spotTransparencyAlpha": 1.0
+}</DisplaySettings>
+</TrackMate>
