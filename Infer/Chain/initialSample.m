@@ -1,7 +1,7 @@
 function Sample = initialSample(Parameters)
                   shortHand
 %% Iteration & Simulated Annealing Temperature:
-  Sample.i = 1;    Sample.T = T0;
+   Sample.i = 1;    Sample.T = T0;
 %% Diffusivity:
    Sample.D = phiD * chiD / randg(phiD);
 %% Photon (γ) Emission Rates:
@@ -39,11 +39,9 @@ function Sample = initialSample(Parameters)
    logG   = logPriorG(Gi,Prior)                     ;    Sample.logPrior.G   = logG  ;
    logP   = logb + logR+logD + logFGH+logF+logH+logG;    Sample.logPosterior = logP  ;
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Print Sampled Values           :
   Chain.Sample      = Sample      ;    
   Chain.Parameters  = Parameters  ;
   Chain.T           = Sample.T    ;
   showSample(Chain, "Approximate");
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 end

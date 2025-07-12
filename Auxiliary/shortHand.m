@@ -1,4 +1,3 @@
-
 if~exist("Parameters",'var');    Parameters = Chain.Parameters;    end
 
 %% Assign Shorthand Variables        :
@@ -28,6 +27,11 @@ if~exist("Parameters",'var');    Parameters = Chain.Parameters;    end
 
  % Emission Parameters               :
       f    = Parameters.f            ;
+if isfield(Parameters,"QE")
+      QE   = Parameters.QE;
+else; QE   = 1            ;
+           % 95/100       ; % Typical of EMCCDS.
+end
 
  % Hyperparameters                   :  
     Mean     = Parameters.Prior.R0.Mean;

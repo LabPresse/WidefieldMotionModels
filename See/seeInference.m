@@ -1,5 +1,4 @@
-function                                  ...
-     varargout = seeInference(Chain,varargin)
+function varargout = seeInference(Chain,varargin)
     Parameters = Chain.Parameters ;
         Bounds = Parameters.Bounds;
         Time   = Parameters.Time  ;
@@ -58,8 +57,8 @@ if size(Chain.X,2) > 100
         end                                                                                %|
       end                                                                                  %|
     end                                                                                    %|
-    W = w / f / G; % informed measurements account for EMCCD Gain & ExcessNoiseFactor=2.
-    U = tE/f * (F*PA + h*pixPSF); % mean photon count. 
+    W = w/2 / G;
+    U = tE/2 * (F*PA + h*pixPSF); % Photoelectron load.
 % end
 end
 

@@ -8,11 +8,10 @@ function varargout = Infer(Name,varargin)
   else
     for any =  1  : nargin - 1
         Any = varargin{any}  ;
-      if     isstruct( Any)  %; if getName(Any,any) == "Show" || getName(Any,any) == "show";    Show = Any;    break;    end
+      if     isstruct( Any)
         if~isfield(Any,"Length")
                ALL = string(fieldnames(Any));
-% 9.22@2AM     ALL = getName(Any).Fields;
-          for each = 1 : length(ALL)%;
+          for each = 1 : length(ALL)
               Each = ALL(each)  ;
               EACH = Any.(Each) ;    Show.(Each) = EACH;
           end

@@ -3,7 +3,7 @@ function [h, b, Record] = sampleRatesLoads(h, b, F, X,Y,Z, G, Record,T,Parameter
   h_            = Parameters.GroundTruth.h ;
                 % PROPOSE(h, Parameters.MH_sc(2), 1);
   hContribution = zeros(P, N, M)           ;
-  FContribution = tE / f * F * PcA         ;
+  FContribution = tE/2 * F * PcA           ;
   logSignal     = logW - log(G)            ;
   logPrior      = [log(M - 1); log(gammaB)];
 
@@ -23,13 +23,13 @@ function [h, b, Record] = sampleRatesLoads(h, b, F, X,Y,Z, G, Record,T,Parameter
     end
   end
 
-    hContribution = tE / f * h_ * hContribution;
+    hContribution = tE/2 * h_ * hContribution;
     Base          = FContribution + sum(hContribution(:, :, onOut), 3);
     logPosterior_ = getLogPosterior(hContribution(:, :, Batch), Base, logSignal, logPrior, T);
-    hContribution = hContribution / h_ * h;
+    hContribution = hContribution/h_ * h;
     logPosterior  = getLogPosterior(hContribution(:, :, Batch), Base, logSignal, logPrior, T);
     logr          = logSumEXP(logPosterior_) - logSumEXP(logPosterior)                     ...
-                  + (phiH - 1) * log(h_ / h) + phiH * (h - h_) / psiH;
+                  + (phiH - 1) * log(h_/h) + phiH * (h - h_) / psiH                          ;
 
     if log(rand)  < logr
         h = h_;    logPosterior = logPosterior_;    hContribution = hContribution * h_/h;    Record(1) = Record(1) + 1;

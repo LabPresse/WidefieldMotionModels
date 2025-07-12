@@ -34,9 +34,6 @@ end
               K = size(GT.X, 1);    k = Q.K * Q.N;    
 
              dS = round(K / k); % Downsample to 1 in dS samples.
-%disp("K = " + K + " should be greater than " + "k = " + k)
-%disp("round(K / k) = " + dS)
-% if dS == 0;  dS = round(k / K);  end % <--- WHY?
 
   clear X Y Z;    Zero = zeros(k,1);   ZERO = zeros(k, B);
         t       = Zero  ;

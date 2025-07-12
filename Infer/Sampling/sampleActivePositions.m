@@ -8,12 +8,12 @@ function [onX, onY, onZ, D, Record] = sampleActivePositions(B, onX,onY,onZ, F,h,
   ProposeY = @(b) MH(5) * refS * randn(K, b) .* double(rand(K, b) <= 1 / (K * b));
   ProposeZ = @(b) MH(5) * refZ * randn(K, b) .* double(rand(K, b) <= 1 / (K * b));
 
-         W = log(w / (f * G));
+         W = log(w / (2*G))  ;
        vPn = NaN(Px, Py, N)  ;
         Pn = NaN(N , 1)      ;
 
   for         n  = 1 : N
-      vPn(:,:,n) = inferExpectation(1:B, onX(tI(n,:),:),onY(tI(n,:),:),onZ(tI(n,:),:), tCoeff, xB,yB, tE/f, F,h, PSF);
+      vPn(:,:,n) = inferExpectation(1:B, onX(tI(n,:),:),onY(tI(n,:),:),onZ(tI(n,:),:), tCoeff, xB,yB, tE/2, F,h, PSF);
        Pn(    n) = sum(vPn(:,:,n) .* W(:,:,n) - gammaln(vPn(:,:,n)), "All");
   end
 
@@ -24,17 +24,17 @@ function [onX, onY, onZ, D, Record] = sampleActivePositions(B, onX,onY,onZ, F,h,
     for n  = randperm(N)
 %% Proposed Positions of Active Emitters:
       X_   = onX(tI(n,:),:) + proposeX(B);    Y_ = onY(tI(n,:),:) + proposeY(B);    Z_ = onZ(tI(n,:),:) + proposeZ(B);
-      vP_  = inferExpectation([],X_,Y_,Z_,tCoeff,xB,yB,tE / f,F,h,PSF);
+      vP_  = inferExpectation([],X_,Y_,Z_,tCoeff,xB,yB,tE/2,F,h,PSF);
       Pn_  = sum(vP_ .* W(:, :, n) - gammaln(vP_), "All");
       loga = (Pn_ - Pn(n)) / T;
       switch n
-        case 1;    index = 1 : tI(n + 1, 1);                  Status = "Start" ;
-            loga = loga + 1/2  * sum(                                        ...
+        case 1;    index = 1 : tI(n + 1, 1);                   Status = "Start"    ;
+            loga = loga + 1/2  * sum(                                            ...
                    ((onX(1,:) - Mean(1)).^2 - (X_(1,:) - Mean(1)).^2) / sD(1)^2  ...
                  + ((onY(1,:) - Mean(2)).^2 - (Y_(1,:) - Mean(2)).^2) / sD(2)^2  ...
                  + ((onZ(1,:) - Mean(3)).^2 - (Z_(1,:) - Mean(3)).^2) / sD(3)^2   );
-        case    N; index  = tI(n - 1, end) : N * K       ;    Status = "End"   ;
-        otherwise; index  = tI(n - 1, end) : tI(n + 1, 1);    Status = "Middle";
+        case    N; index  = tI(n - 1, end) : N * K       ;    Status = "End"       ;
+        otherwise; index  = tI(n - 1, end) : tI(n + 1, 1);    Status = "Middle"    ;
       end
       IBD_ = IBDi + deltaIBD(onX(index,:),onY(index,:),onZ(index,:), X_,Y_,Z_, tk(index), Status);
       loga = loga + AD * log(IBDi / IBD_);
@@ -45,7 +45,7 @@ function [onX, onY, onZ, D, Record] = sampleActivePositions(B, onX,onY,onZ, F,h,
 
 %% Proposed Location of Active Emitters:
       X_  = onX(tI(n,:),:) + ProposeX(B);    Y_ = onY(tI(n,:),:) + ProposeY(B);    Z_ = onZ(tI(n,:),:) + ProposeZ(B);
-     vP_  = inferExpectation([],X_,Y_,Z_, tCoeff, xB,yB, tE / f, F,h, PSF)      ;
+     vP_  = inferExpectation([],X_,Y_,Z_, tCoeff, xB,yB, tE/2, F,h, PSF)       ;
      Pn_  = sum(vP_ .* W(:,:,n) - gammaln(vP_), "All")                         ;
      loga = (Pn_ - Pn(n)) / T                                                  ;
 
