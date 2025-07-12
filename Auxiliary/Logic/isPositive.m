@@ -1,0 +1,1 @@
+function status = isPositive(number);   status = number >0            ;   end

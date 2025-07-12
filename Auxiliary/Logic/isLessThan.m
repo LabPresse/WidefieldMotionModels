@@ -1,0 +1,1 @@
+function status = isLessThan(number,reference)   ;   status = number<reference;   end

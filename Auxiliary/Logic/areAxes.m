@@ -1,0 +1,1 @@
+function trueORfalse = areAxes(Axes);    trueORfalse = isgraphics(Axes,"Axes");    end

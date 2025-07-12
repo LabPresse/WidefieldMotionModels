@@ -1,0 +1,1 @@
+function sizeGB = getMemory(Chain);    sizeGB = whos(inputname(1));    sizeGB = sizeGB.bytes / 1024^3;    end

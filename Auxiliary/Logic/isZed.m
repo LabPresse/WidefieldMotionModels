@@ -1,0 +1,1 @@
+function status = isZed(number);   status = number==0;   end

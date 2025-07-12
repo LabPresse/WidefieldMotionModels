@@ -1,0 +1,2 @@
+function truth = isArray(In);    truth = false;    if isnumeric(In) && ~isscalar(In);    truth = true;    end;    end
+                                                 % if isvector(In)  ||  ismatrix(In);

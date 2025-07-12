@@ -1,0 +1,1 @@
+function status = isNegative(number);   status = number <0;   end

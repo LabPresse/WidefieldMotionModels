@@ -1,0 +1,1 @@
+function trueORfalse = isFigure(Figure);    trueORfalse = isgraphics(Figure,'figure');    end

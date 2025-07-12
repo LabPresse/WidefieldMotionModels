@@ -1,0 +1,1 @@
+function status = isGreaterThan(number,reference);   status = number>reference;   end
