@@ -36,7 +36,7 @@ The software presented here accompanies our scientific article [How Easy Is It t
 
 **III: Learn Motion Models**
 
-    Until we obtain permission to upload working versions of the motion model classifiers [CONDOR](https://github.com/sam-labUCL/CONDOR/tree/main) and [AnomDiffDB](https://github.com/AnomDiffDB/DB), we provide details on how to operate them.
+  Until we obtain permission to upload working versions of the motion model classifiers [CONDOR](https://github.com/sam-labUCL/CONDOR/tree/main) and [AnomDiffDB](https://github.com/AnomDiffDB/DB), we provide details on how to operate them.
 
     (1) First, use "generateInput.m" to produce the desired data files in their appropriate directories.
     (2) Use the original third-party codes as described:
@@ -77,8 +77,9 @@ The software presented here accompanies our scientific article [How Easy Is It t
       *b: CONDOR*
         Nota bene: We verified that CONDOR works on MATLAB 2024a and MATLAB 2025a but not MATLAB 2024b.
 
-        First, run "CONDOR.m", and then open the command window, where you will follow
+        First, run "CONDOR.m", and then open the command window, where you will respond as follows:
           Respond "3" (or "2" if preferred) to the prompt, "What is the dimension (1,2,3)?" 
           Respond "n" to the prompt, "Would you like to train CONDOR networks for classification (y/n)?"
+          Respond "y" to the prompt, "Would you like to predict the model classification with CONDOR (y/n)?"
           Respond "n" to the prompt, "Would you like to train CONDOR networks for inference (y/n)?"
           Respond "y" to the prompt, "Would you like to predict the anomalous diffusion coefficient with CONDOR (y/n)?"
